@@ -1,0 +1,81 @@
+{
+    "menus": [
+        {
+            "_id": 1,
+            "name": "PRODUCTS",
+            "link": "index.html",
+            "status": "HOME",
+            "omeGaMenu": false,
+            "children": null
+        },
+        {
+            "_id": 2,
+            "name": "ROOMS",
+            "link": "rooms.page.html",
+            "status": "COLLECTIONS",
+            "omeGaMenu": false,
+            "children": null
+        },
+        {
+            "_id": 3,
+            "name": "COLLECTIONS",
+            "link": "collections.page.html",
+            "omeGamMenu": false,
+            "status": "COLLECTIONS",
+            "children": false
+        }
+    ],
+
+    "productPortfolio": [
+        {
+            "id": 1,
+            "name": "Sofas",
+            "img":"product__portfolio--1.png"
+        },
+        {
+            "id": 2,
+            "name": "Amchairs",
+            "img":"product__portfolio--2.png"
+        },
+        {
+            "id": 3,
+            "name": "Chairs",
+            "img":"product__portfolio--3.png"
+        },
+        {
+            "id": 4,
+            "name": "Tables",
+            "img":"product__portfolio--4.png"
+        },
+        {
+            "id": 5,
+            "name": "Lamps",
+            "img":"product__portfolio--5.png"
+        },
+        {
+            "id": 6,
+            "name": "Rugs",
+            "img":"product__portfolio--6.png"
+        },
+        {
+            "id": 7,
+            "name": "Decor",
+            "img":"product__portfolio--7.png"
+        },
+        {
+            "id": 8,
+            "name": "Sofas",
+            "img":"product__portfolio--8.png"
+        },
+        {
+            "id": 9,
+            "name": "Beds",
+            "img":"product__portfolio--9.png"
+        },
+        {
+            "id": 10,
+            "name": "Sofas",
+            "img":"product__portfolio--10.png"
+        }
+    ]
+}

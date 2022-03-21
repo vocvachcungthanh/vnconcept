@@ -1,0 +1,27 @@
+{% extends "../layouts/master-layout.twig" %}
+{% block titlePage %}
+	vncpncept - Trang chủ
+{% endblock %}
+{% block content %}
+	<div class="container">
+		<div class="relative banner__home">
+			<div class="relative pt-[38.334%] mt-[25px] overflow-hidden">
+				<img src="images/banner__home.jpg" alt="banner__home.jpg" class="w-full object-cover absolute top-0 left-0 right-0 bottom-0">
+			</div>
+			<div class="p-[60px] absolute top-0 left-0 right-0  bottom-0 z-2">
+				<h1 class="text-white font-black text-[40px] text-shadow">
+					Làn gió mới cho
+					<br>
+					không gian sống của bạn!
+				</h1>
+			</div>
+		</div>
+		<div class="mt-[60px]">
+			{% include "../components/TitleGlobal.component.twig" with { title:"Danh mục sản phẩm"} %}
+			{% include "../components/ProductPortfolio.twig" %}
+		</div>
+		<div class="mt-[60px]">
+			{% include "../components/TitleGlobal.component.twig" with { title:"Sofa bộ nhập khẩu châu Âu"} %}
+		</div>
+	</div>
+{% endblock %}

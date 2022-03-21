@@ -1,0 +1,9 @@
+<ul class="flex justify-center items-center ml-[59.35px]">
+	{% for menu in menus %}
+		<li>
+			<a href="#" title="{{menu.name}}" class=" flex text-white text-transparent-unp uppercase text-base px-4 pt-[26px] pb-[22px]">
+				{{menu.name}}
+			</a>
+		</li>
+	{% endfor %}
+</ul>

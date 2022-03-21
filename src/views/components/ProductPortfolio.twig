@@ -1,0 +1,13 @@
+<div class="product__portfolio grid grid-cols-5 mt-6">
+	{% for item in productPortfolio %}
+		<a href="index.html" class="flex items-center justify-center flex-col my-[43.75px] product__portfolio--item" title="{{item.name}}">
+			<div class="w-36 relative pt-[39.38%] mb-4 product__portfolio--image">
+				<img src="images/{{item.img}}" class="flex absolute top-0 left-0 right-0 bottom-0 w-full object-contain">
+			</div>
+			<h3 class="text-[#232323] text-base">
+				{{item.name}}
+			</h3>
+		</a>
+
+	{% endfor %}
+</div>
