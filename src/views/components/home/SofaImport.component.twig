@@ -1,0 +1,24 @@
+<div class="grid grid-cols-2 gap-4  sofa-import mt-4">
+	{% set
+       products = [
+             {
+            id:1,
+            title:"Sofa Modena 2 seater",
+            target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+            price:"67.590.000",
+            thumbnail:"sofa-import-1.png",
+            link:"productDetail.page.html"
+        },
+        {
+            id:2,
+            title:"Sofa Modena 2 seater",
+            target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+            price:"67.590.000",
+            thumbnail:"sofa-import-2.png",
+            link:"productDetail.page.html"
+        }
+        ] %}
+	{% for product in products %}
+		{% include "../propducts/ProductItem.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link}  %}
+	{% endfor %}
+</div>

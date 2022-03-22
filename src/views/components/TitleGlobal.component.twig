@@ -1,3 +1,12 @@
-<h2 class="text-[#212529] font-semibold text-2xl">
-	{{title}}
-</h2>
+<div class="flex items-center flex-wrap ">
+	<h2 class="text-[#212529] font-semibold text-2xl">
+		{{title}}
+	</h2>
+
+	{% if link %}
+		<a href="{{link}}" title="Xem thêm" class="ml-auto text-[#212529] text-sm hover:opacity-80">
+			Xem thêm
+		</a>
+	{% endif %}
+
+</div>

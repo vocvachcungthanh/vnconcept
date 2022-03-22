@@ -33,6 +33,9 @@
     src: url("../fonts/SF-Pro-Text-Bold.woff");
     font-display: swap;
 }
+body {
+    overflow-x: hidden;
+}
 .container {
     max-width: 1230px;
     width: 100%;
@@ -77,6 +80,71 @@
                 height: 80px;
                 background-color: var(--gray-300);
                 z-index: -1;
+            }
+        }
+    }
+}
+.slide__album {
+    max-width: calc(100% - 389px);
+    width: 100%;
+    .album {
+        transform: translateX(50%);
+        margin-left: -105%;
+
+        .album__item {
+            .album__box {
+                .album__footer {
+                    backdrop-filter: blur(32px);
+                }
+                .album__image {
+                    overflow: hidden;
+                    img {
+                        transition: 1s all;
+                    }
+                }
+                &:hover {
+                    .album__image {
+                        img {
+                            transition: 1s all;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+        .slick-arrow {
+            top: unset;
+            transform: unset;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+
+            z-index: 5;
+            left: 0;
+            bottom: 6px;
+            border: 1.5px solid #bfbfbf;
+            overflow: hidden;
+            transition: 0.2s all;
+
+            &:hover {
+                transition: 0.2s all;
+                border-color: #000;
+            }
+            &::before {
+                display: none;
+            }
+            &.slick-next {
+                right: unset;
+                left: -20%;
+                background: url("../images/icons/icon__next.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            &.slick-prev {
+                left: -24%;
+                background: url("../images/icons/icon__prev.png");
+                background-repeat: no-repeat;
+                background-position: center center;
             }
         }
     }
