@@ -11,7 +11,7 @@
 			</h1>
 			<p class="text-center text-[#212529] text-lg max-w-[794px] w-full mx-auto mt-[14px]">
 				Khám phá những phòng khách đẹp để tạo cảm hứng cho không gian cá nhân của bạn.
-																																																																																																																																																																																																																																																																													Dưới đây, chúng tôi mời bạn chiêm ngưỡng những phòng khách đẹp với những đường nét thiết kế tốt nhất, mới nhất, hiện đại nhất.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									Dưới đây, chúng tôi mời bạn chiêm ngưỡng những phòng khách đẹp với những đường nét thiết kế tốt nhất, mới nhất, hiện đại nhất.
 			</p>
 		</div>
 
@@ -88,9 +88,68 @@
 
                     ] %}
 			{% for product in products %}
-				{% include "../components/propducts/ProductItem.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link}  %}
+				{% include "../components/propducts/ProductItem.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link, card:true}  %}
 			{% endfor %}
 		</div>
+		<div class="grid gap-4 max-w-[400px] w-full mx-auto border-t border-[#C4C4C4] text-center pt-4">
+			<p class="text-[#212529] text-lg">
+				Giá niêm yết: 54.000.000đ
+			</p>
+			<span class="text-[#212529] text-lg font-bold">
+				Giá cả bộ: 44.000.000đ
+			</span>
+			<a href="#" class="w-full hover:opacity-75 max-w-[287px] py-3 mx-auto text-white text-base flex items-center justify-center bg-[#232323]">
+				Mua trọn bộ
+			</a>
+		</div>
 
+		<div class="rooms-same-type mt-[121px] mb-[98px]">
+			<h2 class="text-center text-[40px] text-[#212529]">
+				Phòng cùng loại
+			</h2>
+			<div class="same-type mt-11">
+				<div class="same-slide">
+					{% for item in 1..4 %}
+						<div class="item px-2">
+							<a class="same-box block">
+								<div class="h-[392px] overflow-hidden">
+									<img src="images/sameType-{{loop.index}}.png" alt="sameType-{{loop.index}}.png" class="w-full h-full object-cover hover:opacity-70 transition-all">
+								</div>
+								<h3 class="text-[#424242] text-sm mt-2">
+									Phòng khách 12
+								</h3>
+							</a>
+						</div>
+						<div class="item px-2">
+							<a class="same-box block">
+								<div class="h-[392px] overflow-hidden">
+									<img src="images/sameType-{{loop.index}}.png" alt="sameType-{{loop.index}}.png" class="w-full h-full object-cover hover:opacity-70 transition-all">
+								</div>
+								<h3 class="text-[#424242] text-sm mt-2">
+									Phòng khách 12
+								</h3>
+							</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
 	</div>
+{% endblock %}
+{% block scriptPage %}
+	<script type="text/javascript">
+		$(document).ready(function () {
+function album() {
+$('.same-slide').slick({
+dots: false,
+arrow: true,
+infinite: true,
+slidesToShow: 4,
+slidesToScroll: 1,
+autoplay: true
+})
+}
+album()
+})
+	</script>
 {% endblock %}

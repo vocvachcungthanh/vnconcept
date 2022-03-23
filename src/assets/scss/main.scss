@@ -7,29 +7,34 @@
     font-weight: normal;
     src: url("../fonts/SF-Pro-Text-Regular.woff");
     font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "SF Pro text";
     font-weight: 500;
+    font-style: normal;
     src: url("../fonts/SF-Pro-Text-Medium.woff");
     font-display: swap;
 }
 @font-face {
     font-family: "SF Pro text";
     font-weight: 600;
+    font-style: normal;
     src: url("../fonts/SF-Pro-Text-Semibold.woff");
     font-display: swap;
 }
 @font-face {
     font-family: "SF Pro text";
     font-weight: 900;
+    font-style: normal;
     src: url("../fonts/SF-Pro-Text-Black.woff");
     font-display: swap;
 }
 @font-face {
     font-family: "SF Pro text";
     font-weight: 700;
+    font-style: normal;
     src: url("../fonts/SF-Pro-Text-Bold.woff");
     font-display: swap;
 }
@@ -160,4 +165,37 @@ body {
 }
 .line-through {
     text-decoration: line-through;
+}
+
+.same-slide {
+    .slick-arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+
+        z-index: 5;
+        border: 1.5px solid #bfbfbf;
+        overflow: hidden;
+        transition: 0.2s all;
+
+        &:hover {
+            transition: 0.2s all;
+            border-color: #000;
+        }
+        &::before {
+            display: none;
+        }
+        &.slick-next {
+            background: url("../images/icons/icon__next.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            right: -60px;
+        }
+        &.slick-prev {
+            background: url("../images/icons/icon__prev.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            left: -60px;
+        }
+    }
 }
