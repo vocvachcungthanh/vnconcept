@@ -4,7 +4,7 @@
             "_id": 1,
             "name": "PRODUCTS",
             "link": "index.html",
-            "status": "HOME",
+            "status": "products",
             "omeGaMenu": false,
             "children": null
         },
@@ -12,7 +12,7 @@
             "_id": 2,
             "name": "ROOMS",
             "link": "rooms.page.html",
-            "status": "COLLECTIONS",
+            "status": "rooms",
             "omeGaMenu": false,
             "children": null
         },
@@ -21,7 +21,7 @@
             "name": "COLLECTIONS",
             "link": "collections.page.html",
             "omeGamMenu": false,
-            "status": "COLLECTIONS",
+            "status": "collections",
             "children": false
         }
     ],

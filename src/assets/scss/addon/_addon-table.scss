@@ -1,0 +1,18 @@
+.bs-tab {
+    .tab-content {
+        .tab-item {
+            &.active {
+                display: block;
+            }
+        }
+    }
+    .control-list {
+        .control-list__item {
+            &.active,
+            &:hover {
+                background: rgba(235, 235, 235, 0.5);
+                font-weight: 600;
+            }
+        }
+    }
+}

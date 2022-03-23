@@ -2,7 +2,7 @@
 	<a href="#" class="w-6 h-6  flex items-center  justify-center absolute right-6 top-6 z-10">
 		<img class="w-4" src="images/icons/icon__heart_2.svg" alt="icon__heart_2.svg">
 	</a>
-	<a href="{{link}}" class="flex items-center justify-center h-[260px]" title="{{title}}">
+	<a href="{{link}}" class="flex items-center justify-center h-[{{height ? height : 260}}px]" title="{{title}}">
 		<img src="images/{{thumbnail}}" alt="{{thumbnail}}" class="w-full h-full object-contain"/>
 	</a>
 
@@ -10,5 +10,13 @@
 		<h3 class="product__title text-[#212529] text-sm mb-1">{{ title }}</h3>
 		<p class="text-[#868E96] text-xs">{{ target }}</p>
 	</a>
-	<p class="mt-auto text-sm">{{ price }}</p>
+	<div class="mt-auto flex items-center gap-1">
+		{% if sale %}
+			<p class="text-sm text-[#868E96] line-through">
+				{{sale}}
+			</p>
+		{% endif %}
+
+		<p class=" text-sm">{{ price }}</p>
+	</div>
 </div>

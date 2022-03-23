@@ -36,6 +36,15 @@
 body {
     overflow-x: hidden;
 }
+/**
+    @components
+**/
+@import "./component/header";
+
+/**
+    @addon
+**/
+@import "./addon/addon-table";
 .container {
     max-width: 1230px;
     width: 100%;
@@ -148,4 +157,7 @@ body {
             }
         }
     }
+}
+.line-through {
+    text-decoration: line-through;
 }

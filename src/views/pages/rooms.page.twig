@@ -1,0 +1,96 @@
+{% extends "../layouts/master-layout.twig" %}
+{% set pageStatus = "rooms" %}
+{% block titlePage %}
+	vncpncept - rooms
+{% endblock %}
+{% block content %}
+	<div class="container">
+		<div class="page__rooms pt-[70px] mb-11">
+			<h1 class="text-center text-[40px] text-[#212529]">
+				Phòng khách PK0001
+			</h1>
+			<p class="text-center text-[#212529] text-lg max-w-[794px] w-full mx-auto mt-[14px]">
+				Khám phá những phòng khách đẹp để tạo cảm hứng cho không gian cá nhân của bạn.
+																																																																																																																																																																																																																																																																													Dưới đây, chúng tôi mời bạn chiêm ngưỡng những phòng khách đẹp với những đường nét thiết kế tốt nhất, mới nhất, hiện đại nhất.
+			</p>
+		</div>
+
+		<div class="rooms__one">
+			{% set
+                products = [
+                        {
+                        id:1,
+                        title:"Phòng khách PK0001",
+                        target:"Bàn trà, đôn, sofa, đèn, tranh, thảm",
+                        price:"257.590.000 đ",
+                        sale:"267.590.000 đ",
+                        thumbnail:"product__sale.png",
+                        link:"productDetail.page.html"
+                    },
+
+
+                    ] %}
+			{% for product in products %}
+				{% include "../components/propducts/ProductItem.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link, sale: product.sale , height:720}  %}
+			{% endfor %}
+		</div>
+		<div class="grid grid-cols-2 gap-4 mt-4 carpet ">
+			{% set
+                products = [
+                        {
+                        id:1,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"sofa-import-1.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:2,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product-2.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:3,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product-3.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:4,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product-4.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:5,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product-5.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:6,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product-1.png",
+                        link:"productDetail.page.html"
+                    },
+
+                    ] %}
+			{% for product in products %}
+				{% include "../components/propducts/ProductItem.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link}  %}
+			{% endfor %}
+		</div>
+
+	</div>
+{% endblock %}
