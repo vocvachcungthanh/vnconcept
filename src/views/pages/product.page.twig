@@ -1,0 +1,415 @@
+{% extends "../layouts/master-layout.twig" %}
+{% set pageStatus = "product" %}
+{% block titlePage %}
+	vncpncept - product
+{% endblock %}
+{% block content %}
+	<div class="container">
+		<div class="page__product flex flex-wrap items-start pt-[43px]">
+			<div class="page__product--sidebar flex-shrink-0 max-w-[187px] w-full grid gap-4 mb-4">
+				<div class="sidebar__box active border-t border-[#EEEEEE] pt-4">
+					<div class="sidebar__header flex items-center cursor-pointer">
+						<h3 class="sidebar__title text-[#212529] text-base  font-semibold">
+							Sofa da thật
+						</h3>
+						<span class="sidebar__icon ml-auto w-[18px] h-[18px]">
+							<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.30859 10.2344H12.6914C13.0518 10.2344 13.3154 10.0234 13.3154 9.67188C13.3154 9.31152 13.0693 9.10059 12.6914 9.10059H5.30859C4.92188 9.10059 4.67578 9.31152 4.67578 9.67188C4.67578 10.0234 4.93945 10.2344 5.30859 10.2344Z" fill="#424242"/>
+							</svg>
+							<svg class="" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.16797 9.66309C5.16797 9.97949 5.41406 10.2168 5.74805 10.2168H8.42871V12.8975C8.42871 13.2314 8.66602 13.4688 8.98242 13.4688C9.3252 13.4688 9.5625 13.2402 9.5625 12.8975V10.2168H12.2432C12.5771 10.2168 12.8145 9.97949 12.8145 9.66309C12.8145 9.32031 12.5859 9.08301 12.2432 9.08301H9.5625V6.40234C9.5625 6.05957 9.3252 5.82227 8.98242 5.82227C8.66602 5.82227 8.42871 6.06836 8.42871 6.40234V9.08301H5.74805C5.40527 9.08301 5.16797 9.32031 5.16797 9.66309Z" fill="#424242"/>
+							</svg>
+
+						</span>
+					</div>
+					<ul class="sidebar__body grid gap-y-3 mt-4">
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Sofa đơn">
+								Sofa đơn
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Sofa đôi">
+								Sofa đôi
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Sofa 2 mảnh">
+								Sofa 2 mảnh
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Đôn">
+								Đôn
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar__box active border-t border-[#EEEEEE] pt-4">
+					<div class="sidebar__header flex items-center cursor-pointer">
+						<h3 class="sidebar__title text-[#212529] text-base  font-semibold">
+							Giá
+						</h3>
+						<span class="sidebar__icon ml-auto w-[18px] h-[18px]">
+							<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.30859 10.2344H12.6914C13.0518 10.2344 13.3154 10.0234 13.3154 9.67188C13.3154 9.31152 13.0693 9.10059 12.6914 9.10059H5.30859C4.92188 9.10059 4.67578 9.31152 4.67578 9.67188C4.67578 10.0234 4.93945 10.2344 5.30859 10.2344Z" fill="#424242"/>
+							</svg>
+							<svg class="" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.16797 9.66309C5.16797 9.97949 5.41406 10.2168 5.74805 10.2168H8.42871V12.8975C8.42871 13.2314 8.66602 13.4688 8.98242 13.4688C9.3252 13.4688 9.5625 13.2402 9.5625 12.8975V10.2168H12.2432C12.5771 10.2168 12.8145 9.97949 12.8145 9.66309C12.8145 9.32031 12.5859 9.08301 12.2432 9.08301H9.5625V6.40234C9.5625 6.05957 9.3252 5.82227 8.98242 5.82227C8.66602 5.82227 8.42871 6.06836 8.42871 6.40234V9.08301H5.74805C5.40527 9.08301 5.16797 9.32031 5.16797 9.66309Z" fill="#424242"/>
+							</svg>
+
+						</span>
+					</div>
+					<ul class="sidebar__body grid gap-y-3 mt-4">
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Từ thấp đến cao">
+								Từ thấp đến cao
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Từ cao đến thấp">
+								Từ cao đến thấp
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="1 triệu - 5 triệu">
+								1 triệu - 5 triệu
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="5 triệu - 10 triệu">
+								5 triệu - 10 triệu
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar__box border-t border-[#EEEEEE] pt-4">
+					<div class="sidebar__header flex items-center cursor-pointer">
+						<h3 class="sidebar__title text-[#212529] text-base  font-semibold">
+							Màu sắc
+						</h3>
+						<span class="sidebar__icon ml-auto w-[18px] h-[18px]">
+							<svg class="" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.30859 10.2344H12.6914C13.0518 10.2344 13.3154 10.0234 13.3154 9.67188C13.3154 9.31152 13.0693 9.10059 12.6914 9.10059H5.30859C4.92188 9.10059 4.67578 9.31152 4.67578 9.67188C4.67578 10.0234 4.93945 10.2344 5.30859 10.2344Z" fill="#424242"/>
+							</svg>
+							<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.16797 9.66309C5.16797 9.97949 5.41406 10.2168 5.74805 10.2168H8.42871V12.8975C8.42871 13.2314 8.66602 13.4688 8.98242 13.4688C9.3252 13.4688 9.5625 13.2402 9.5625 12.8975V10.2168H12.2432C12.5771 10.2168 12.8145 9.97949 12.8145 9.66309C12.8145 9.32031 12.5859 9.08301 12.2432 9.08301H9.5625V6.40234C9.5625 6.05957 9.3252 5.82227 8.98242 5.82227C8.66602 5.82227 8.42871 6.06836 8.42871 6.40234V9.08301H5.74805C5.40527 9.08301 5.16797 9.32031 5.16797 9.66309Z" fill="#424242"/>
+							</svg>
+
+						</span>
+					</div>
+					<ul class="sidebar__body grid gap-y-3  mt-4">
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Đen">
+								Đen
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Nâu">
+								Nâu
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Xám">
+								Xám
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="sidebar__box border-t border-[#EEEEEE] pt-4">
+					<div class="sidebar__header flex items-center cursor-pointer">
+						<h3 class="sidebar__title text-[#212529] text-base  font-semibold">
+							Bộ sưu tập
+						</h3>
+						<span class="sidebar__icon ml-auto w-[18px] h-[18px]">
+							<svg class="" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.30859 10.2344H12.6914C13.0518 10.2344 13.3154 10.0234 13.3154 9.67188C13.3154 9.31152 13.0693 9.10059 12.6914 9.10059H5.30859C4.92188 9.10059 4.67578 9.31152 4.67578 9.67188C4.67578 10.0234 4.93945 10.2344 5.30859 10.2344Z" fill="#424242"/>
+							</svg>
+							<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.16797 9.66309C5.16797 9.97949 5.41406 10.2168 5.74805 10.2168H8.42871V12.8975C8.42871 13.2314 8.66602 13.4688 8.98242 13.4688C9.3252 13.4688 9.5625 13.2402 9.5625 12.8975V10.2168H12.2432C12.5771 10.2168 12.8145 9.97949 12.8145 9.66309C12.8145 9.32031 12.5859 9.08301 12.2432 9.08301H9.5625V6.40234C9.5625 6.05957 9.3252 5.82227 8.98242 5.82227C8.66602 5.82227 8.42871 6.06836 8.42871 6.40234V9.08301H5.74805C5.40527 9.08301 5.16797 9.32031 5.16797 9.66309Z" fill="#424242"/>
+							</svg>
+
+						</span>
+					</div>
+					<ul class="sidebar__body grid gap-y-3  mt-4">
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Bộ sưu tập 01">
+								Bộ sưu tập 01
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Bộ sưu tập 02">
+								Bộ sưu tập 02
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Bộ sưu tập 03">
+								Bộ sưu tập 03
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="sidebar__box border-t border-[#EEEEEE] pt-4">
+					<div class="sidebar__header flex items-center cursor-pointer">
+						<h3 class="sidebar__title text-[#212529] text-base  font-semibold">
+							Nhà thiết kế
+						</h3>
+						<span class="sidebar__icon ml-auto w-[18px] h-[18px]">
+							<svg class="" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.30859 10.2344H12.6914C13.0518 10.2344 13.3154 10.0234 13.3154 9.67188C13.3154 9.31152 13.0693 9.10059 12.6914 9.10059H5.30859C4.92188 9.10059 4.67578 9.31152 4.67578 9.67188C4.67578 10.0234 4.93945 10.2344 5.30859 10.2344Z" fill="#424242"/>
+							</svg>
+							<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.16797 9.66309C5.16797 9.97949 5.41406 10.2168 5.74805 10.2168H8.42871V12.8975C8.42871 13.2314 8.66602 13.4688 8.98242 13.4688C9.3252 13.4688 9.5625 13.2402 9.5625 12.8975V10.2168H12.2432C12.5771 10.2168 12.8145 9.97949 12.8145 9.66309C12.8145 9.32031 12.5859 9.08301 12.2432 9.08301H9.5625V6.40234C9.5625 6.05957 9.3252 5.82227 8.98242 5.82227C8.66602 5.82227 8.42871 6.06836 8.42871 6.40234V9.08301H5.74805C5.40527 9.08301 5.16797 9.32031 5.16797 9.66309Z" fill="#424242"/>
+							</svg>
+
+						</span>
+					</div>
+					<ul class="sidebar__body grid gap-y-3  mt-4">
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Nhà thiết kế 01">
+								Nhà thiết kế 01
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Nhà thiết kế 02">
+								Nhà thiết kế 02
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Nhà thiết kế 03">
+								Nhà thiết kế 03
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="sidebar__box border-t border-[#EEEEEE] pt-4">
+					<div class="sidebar__header flex items-center cursor-pointer">
+						<h3 class="sidebar__title text-[#212529] text-base  font-semibold">
+							Chất liệu
+						</h3>
+						<span class="sidebar__icon ml-auto w-[18px] h-[18px]">
+							<svg class="" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.30859 10.2344H12.6914C13.0518 10.2344 13.3154 10.0234 13.3154 9.67188C13.3154 9.31152 13.0693 9.10059 12.6914 9.10059H5.30859C4.92188 9.10059 4.67578 9.31152 4.67578 9.67188C4.67578 10.0234 4.93945 10.2344 5.30859 10.2344Z" fill="#424242"/>
+							</svg>
+							<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 18.4697C13.8252 18.4697 17.8154 14.4795 17.8154 9.6543C17.8154 4.82031 13.8252 0.838867 8.99121 0.838867C4.16602 0.838867 0.18457 4.82031 0.18457 9.6543C0.18457 14.4795 4.1748 18.4697 9 18.4697ZM9 17.3271C4.74609 17.3271 1.32715 13.8994 1.32715 9.6543C1.32715 5.40039 4.74609 1.97266 8.99121 1.97266C13.2451 1.97266 16.6729 5.40039 16.6816 9.6543C16.6816 13.8994 13.2539 17.3271 9 17.3271ZM5.16797 9.66309C5.16797 9.97949 5.41406 10.2168 5.74805 10.2168H8.42871V12.8975C8.42871 13.2314 8.66602 13.4688 8.98242 13.4688C9.3252 13.4688 9.5625 13.2402 9.5625 12.8975V10.2168H12.2432C12.5771 10.2168 12.8145 9.97949 12.8145 9.66309C12.8145 9.32031 12.5859 9.08301 12.2432 9.08301H9.5625V6.40234C9.5625 6.05957 9.3252 5.82227 8.98242 5.82227C8.66602 5.82227 8.42871 6.06836 8.42871 6.40234V9.08301H5.74805C5.40527 9.08301 5.16797 9.32031 5.16797 9.66309Z" fill="#424242"/>
+							</svg>
+
+						</span>
+					</div>
+					<ul class="sidebar__body grid gap-y-3  mt-4">
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Vải">
+								Vải 01
+							</a>
+						</li>
+						<li class="sidebar__item">
+							<a href="#" class="sidebar__link text-[#424242] text-sm hover:text-[#343A40] hover:font-semibold" title="Da">
+								Đa
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="page__product--content w-full">
+				<h1 class="text-[#212529] text-[32px]">
+					Sofa đơn
+				</h1>
+				<p class="text-[#424242] text-base mt-6">
+					Hãy tạo cho mình một không gian thư giãn bằng cách kết hợp một góc không gian nhỏ trong ngôi nhà của bạn cùng một chiếc ghế sofa đơn, vừa thiết thực lại vừa hoàn toàn thoải mái.
+				</p>
+
+				<div class="banner__product my-6">
+					<img src="images/banner__product.png" alt="banner__product.png w-full">
+				</div>
+
+				<div class="grid gap-4 grid-cols-3">
+					{% set
+                products = [
+                        {
+                        id:1,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html",
+                        sale:true
+                    },
+                    {
+                        id:2,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html",
+                        sale:true
+                    },
+                    {
+                        id:3,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html",
+                        sale:true
+                    },
+                    {
+                        id:4,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html",
+                        sale:true
+                    },
+                    {
+                        id:5,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:6,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:7,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:8,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:9,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:10,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:11,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:12,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:13,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                     {
+                        id:14,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                    {
+                        id:15,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"productDetail.page.html"
+                    },
+                    ] %}
+					{% for product in products %}
+						{% include "../components/propducts/ProductItem2.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link, sale:product.sale}  %}
+					{% endfor %}
+				</div>
+				{% include "../addons/addon-pagination.twig" %}
+
+				<div class="rooms-same-type mt-10 border-t border-[#EEEEEE] mb-20 pt-10">
+					<h2 class="text-2xl  text-[#212529] font-semibold">
+						Ứng dụng trong bài trí phòng
+					</h2>
+					<div class="same-type mt-6">
+						<div class="same-slide">
+							{% for item in 1..4 %}
+								<div class="item px-2">
+									<a href="#" class="same-box block" title="Phòng khách 12">
+										<div class="h-[392px] overflow-hidden">
+											<img src="images/sameType-{{loop.index}}.png" alt="sameType-{{loop.index}}.png" class="w-full h-full object-cover hover:opacity-70 transition-all">
+										</div>
+										<h3 class="text-[#424242] text-sm mt-2">
+											Phòng khách 12
+										</h3>
+									</a>
+								</div>
+								<div class="item px-2">
+									<a href="#" class="same-box block" title="Phòng khách 12">
+										<div class="h-[392px] overflow-hidden">
+											<img src="images/sameType-{{loop.index}}.png" alt="sameType-{{loop.index}}.png" class="w-full h-full object-cover hover:opacity-70 transition-all">
+										</div>
+										<h3 class="text-[#424242] text-sm mt-2">
+											Phòng khách
+										</h3>
+									</a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+{% block scriptPage %}
+	<script type="text/javascript">
+		$(document).ready(function () {
+function album() {
+$('.same-slide').slick({
+dots: false,
+arrow: true,
+infinite: true,
+slidesToShow: 3,
+slidesToScroll: 1,
+autoplay: true
+})
+}
+album()
+})
+	</script>
+{% endblock %}

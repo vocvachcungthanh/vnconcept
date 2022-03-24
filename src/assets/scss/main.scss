@@ -50,6 +50,7 @@ body {
     @addon
 **/
 @import "./addon/addon-table";
+@import "./addon/addon-pagination";
 .container {
     max-width: 1230px;
     width: 100%;
@@ -196,6 +197,77 @@ body {
             background-repeat: no-repeat;
             background-position: center center;
             left: -60px;
+        }
+    }
+}
+.like {
+    cursor: pointer;
+    svg {
+        &:last-child {
+            display: none;
+        }
+    }
+    &.active {
+        svg {
+            &:last-child {
+                display: block;
+            }
+            &:first-child {
+                display: none;
+            }
+        }
+    }
+}
+.sidebar__box {
+    &.active {
+        .sidebar__header {
+            .sidebar__icon {
+                svg {
+                    &:first-child {
+                        display: block;
+                    }
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .sidebar__body {
+            display: grid;
+            transition: 0.2s all;
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .sidebar__header {
+        .sidebar__icon {
+            svg {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sidebar__body {
+        display: none;
+        transition: 0.2s all;
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+.page__product {
+    .page__product--content {
+        padding-left: 117px;
+        max-width: calc(100% - 187px);
+    }
+}
+.page__card {
+    .card__product {
+        .card__box {
+            &:not(:first-child) {
+                border-top: 1px solid #eeeeee;
+                padding-top: 40px;
+            }
         }
     }
 }

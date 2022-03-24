@@ -3,8 +3,8 @@
         {
             "_id": 1,
             "name": "PRODUCTS",
-            "link": "index.html",
-            "status": "products",
+            "link": "product.page.html",
+            "status": "product",
             "omeGaMenu": false,
             "children": null
         },
