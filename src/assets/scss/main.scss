@@ -51,6 +51,7 @@ body {
 **/
 @import "./addon/addon-table";
 @import "./addon/addon-pagination";
+@import "./addon/bs-modal";
 .container {
     max-width: 1230px;
     width: 100%;
@@ -168,7 +169,8 @@ body {
     text-decoration: line-through;
 }
 
-.same-slide {
+.same-slide,
+.slide__product {
     .slick-arrow {
         width: 48px;
         height: 48px;
@@ -197,6 +199,16 @@ body {
             background-repeat: no-repeat;
             background-position: center center;
             left: -60px;
+        }
+    }
+}
+.slide__product {
+    .slick-arrow {
+        &.slick-next {
+            right: -94px;
+        }
+        &.slick-prev {
+            left: -94px;
         }
     }
 }
@@ -267,6 +279,23 @@ body {
             &:not(:first-child) {
                 border-top: 1px solid #eeeeee;
                 padding-top: 40px;
+            }
+        }
+    }
+    .card__info {
+        max-width: calc(100% - 592px);
+    }
+}
+.breadcrumb {
+    li {
+        &:not(:last-child) {
+            position: relative;
+            &::after {
+                content: "/";
+                position: absolute;
+                top: 50%;
+                right: -6.5px;
+                transform: translateY(-50%);
             }
         }
     }

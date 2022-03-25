@@ -1,0 +1,52 @@
+{% extends "../layouts/master-layout.twig" %}
+
+{% block titlePage %}
+	vncpncept - detail product
+{% endblock %}
+{% block content %}
+	<div class="container">
+		<div class="page__detail pt-7 pb-20">
+			<ul class="text-[#868E96] flex items-center text-sm gap-[13px] breadcrumb">
+				<li>
+					<a href="product.page.html" title="Sản phẩm">Sản phẩm</a>
+				</li>
+				<li>
+					<a href="product.page.html" title="Sofa da thật">Sofa da thật</a>
+				</li>
+				<li>
+					<a href="product.page.html" title="Sofa đôi" class="text-[#232323]">Sofa đôi</a>
+				</li>
+			</ul>
+
+			<div class="detail__slide max-w-[1010px] w-full mt-12 mx-auto">
+				<div class="slide__product">
+					<div class="slide__item">
+						<img src="images/sofa-import-1.png" class="max-w-full w-full object-contain block mx-auto" alt="">
+					</div>
+					<div class="slide__item">
+						<img src="images/sofa-import-2.png" class="max-w-full w-full object-contain block mx-auto" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+{% endblock %}
+{% block scriptPage %}
+	<script type="text/javascript">
+		$(document).ready(function () {
+function album() {
+$('.slide__product').slick({
+dots: false,
+arrow: true,
+infinite: true,
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true
+})
+}
+album()
+})
+	</script>
+{% endblock %}

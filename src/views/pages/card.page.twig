@@ -114,6 +114,76 @@
 					</div>
 				</div>
 			</div>
+			<div class="card__info w-full pl-[117px]">
+				<h2 class="text-[#212529] font-semibold text-2xl">
+					Thanh toán
+				</h2>
+				<p class="card__total text-[#868E96] text-sm mt-1">
+					4 sản phẩm
+				</p>
+				<div class="card__info--body text=[#212529] mt-10">
+					<p class="flex items-center flex-wrap mb-4">
+						<span>
+							Tổng hoá đơn
+						</span>
+						<span class="ml-auto">
+							676.000.000
+						</span>
+					</p>
+					<p class="flex items-center flex-wrap mb-4">
+						<span>
+							Giao hàng
+						</span>
+						<span class="ml-auto">
+							Miễn phí
+						</span>
+					</p>
+					<p class="flex items-center flex-wrap mb-4">
+						<span>
+							Mã giảm giá
+						</span>
+						<span class="ml-auto">
+							---
+						</span>
+					</p>
+
+				</div>
+				<div class="flex items-center flex-wrap font-bold mt-6 text-[#212529] mb-10">
+					<span>
+						Tổng giá trị
+					</span>
+					<span class="ml-auto">
+						676.000.000
+					</span>
+				</div>
+				<div class="information_delivery py-10 border-y border-[#EEEEEE]">
+					<h3 class="card__total text-[#212529] text-lg font-bold mb-4">
+						Thông tin giao hàng
+					</h3>
+					<p class="text-[#424242] text-sm">
+						Vnconcept sẽ giao hàng cho bạn trong vòng 5 - 6 ngay kể từ ngày bạn nhận được cuộc gọi xác nhận từ tổng đài
+					</p>
+				</div>
+				<div class="card__info--footer mt-10">
+					<button type="button" modal-show="show" modal-data="#formContact" class="p-3 w-full hover:opacity-80 transition-all text-white bg-[#232323]">
+						Đặt hàng
+					</button>
+					<a href="product.page.html" class="h-[46px] w-full mt-4 flex items-center justify-center text-[#232323] py-2 border border-[#232323] hover:bg-[#232323] hover:text-white transition-all">
+						Tiếp tục mua sắm
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
+	<div class="bs-modal modal__recruit" id="formContact">
+		<div class="modal-frame">
+			<div class="content-modal max-w-[527px] w-full">
+				<div class="module__contact">
+					{% include "../components/FormContact.component.twig" %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 {% endblock %}
