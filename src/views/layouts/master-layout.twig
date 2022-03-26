@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="robots" , content="index, follow">
-        <link rel="icon" , href="images/icons/favicon-16x16.svg" , type="image/x-icon" , sizes="16x16" />
+		<link rel="icon" , href="images/icons/favicon-16x16.svg" , type="image/x-icon" , sizes="16x16"/>
 		<title>
 			{% block titlePage %}{% endblock %}
 		</title>
@@ -19,6 +19,7 @@
 	<body {% if block("bodyClass") is defined %} class="{% block bodyClass %}{% endblock %}" {% endif %}>
 		<div class="wrapper">
 			{% include "../components/Header.component.twig" %}
+
 			<main id="main" {% if block("mainClass") is defined %} class="{% block mainClass %}{% endblock %}" {% endif %}> {% block content %}{% endblock %}
 				</main>
 

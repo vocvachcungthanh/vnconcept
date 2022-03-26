@@ -1,30 +1,30 @@
 Arguments: 
-  /home/thanh_dev/.config/versions/node/v16.14.0/bin/node /home/thanh_dev/.config/versions/node/v16.14.0/bin/yarn init
+  C:\Program Files\nodejs\node.exe C:\Users\vocva\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add jquery-cutom-select
 
 PATH: 
-  /home/thanh_dev/.config/versions/node/v16.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin
+  C:\cmder\vendor\git-for-windows\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\cmder\bin;C:\Program Files\nodejs\;C:\Users\vocva\AppData\Local\Microsoft\WindowsApps;C:\Users\vocva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vocva\AppData\Roaming\npm;C:\cmder\vendor\git-for-windows\mingw64\bin;C:\cmder\vendor\git-for-windows\usr\bin;C:\cmder\vendor\bin;C:\cmder
 
 Yarn version: 
-  1.22.17
+  1.22.18
 
 Node version: 
-  16.14.0
+  16.14.2
 
 Platform: 
-  linux x64
+  win32 x64
 
 Trace: 
-  TypeError: Cannot read properties of null (reading 'setRawMode')
-      at ReadStream.setRawMode (node:tty:76:28)
-      at Interface._setRawMode (node:readline:399:16)
-      at new Interface (node:readline:334:10)
-      at Object.createInterface (node:readline:148:10)
-      at read (/home/thanh_dev/.config/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:137122:23)
-      at /home/thanh_dev/.config/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:96939:7
-      at new Promise (<anonymous>)
-      at new F (/home/thanh_dev/.config/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:5301:28)
-      at ConsoleReporter.question (/home/thanh_dev/.config/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:96938:12)
-      at Object.<anonymous> (/home/thanh_dev/.config/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:89134:36)
+  Error: https://registry.yarnpkg.com/jquery-cutom-select: Not found
+      at Request.params.callback [as _callback] (C:\Users\vocva\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66138:18)
+      at Request.self.callback (C:\Users\vocva\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (C:\Users\vocva\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (C:\Users\vocva\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {

@@ -1,0 +1,180 @@
+{% extends "../layouts/master-layout-admin.twig" %}
+{% set pageStatus = "admin" %}
+{% block titlePage %}
+	vncpncept - Quản lý đơn hàng
+{% endblock %}
+{% block content %}
+	<div class="page__admin flex flex-wrap items-start">
+		{% include "../components/admin/sidebarAdmin.component.twig" %}
+		<div class="admin__main max-w-[calc(100%_-_256px)] w-full bg-white  flex flex-col h-screen">
+			{% include "../components/admin/HeaderAdmin.component.twig" %}
+
+			<div class="admin__main-body px-5 py-3">
+				<div class="overflow-auto">
+					<table class="table w-full text-sm text-left min-w-[700px]">
+						<thead>
+							<tr>
+								<th class="border-[0.5px] w-10 px-2 py-[10px] border-[#D2D2D2]">
+									<input type="checkbox"/>
+								</th>
+								<th class="w-[52px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									STT
+								</th>
+								<th class="w-[113px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Mã đơn
+								</th>
+								<th class="w-[108px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Tình trạng
+								</th>
+								<th class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Người nhận
+								</th>
+								<th class="w-[306px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Địa chỉ giao hàng
+								</th>
+								<th class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									SĐT người nhận
+								</th>
+								<th class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Ngày giao
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<input checked type="checkbox"/>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									1
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									EG123456
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<span class="bg-[#A3C6FF] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+										Đang giao
+									</span>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Nguyễn Văn Sơn
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									885 Tam Trinh, Hoàng Mai, Hà Nội
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									0377401079
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									20/03/20222
+								</td>
+							</tr>
+							<tr>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<input type="checkbox"/>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									2
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									EG123456
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<span class="bg-[#73FF81] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+										Đã giao
+									</span>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Nguyễn Văn Sơn
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									885 Tam Trinh, Hoàng Mai, Hà Nội
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									0377401079
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									20/03/20222
+								</td>
+							</tr>
+							<tr>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<input type="checkbox"/>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									3
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									EG123456
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<span class="bg-[#FFA6A6] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+										Đã hủy
+									</span>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Nguyễn Văn Sơn
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									885 Tam Trinh, Hoàng Mai, Hà Nội
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									0377401079
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									20/03/20222
+								</td>
+							</tr>
+							<tr>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<input type="checkbox"/>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									4
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									EG123456
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									<span class="bg-[#FFDE67] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+										Chờ giao
+									</span>
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									Nguyễn Văn Sơn
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									885 Tam Trinh, Hoàng Mai, Hà Nội
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									0377401079
+								</td>
+								<td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+									20/03/20222
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<div class="text-[#212529] flex items-center justify-end gap-x-8 mt-auto px-5 py-3">
+				<span>
+					Số lượng hiển thị:
+				</span>
+				<div class="rounded border border-[#D2D2D2] flex items-center select__pagination">
+					<select class="select-admin">
+						<option value="">40</option>
+						<option value="">30</option>
+						<option value="">20</option>
+					</select>
+					<span class="bg-[#D2D2D2] h-6 flex justify-center items-center px-2">
+						/ trang
+					</span>
+				</div>
+
+				{% include "../addons/addon-pagination.twig" %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

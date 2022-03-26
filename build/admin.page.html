@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" , content="index, follow">
+    <link rel="icon" , href="images/icons/favicon-16x16.svg" , type="image/x-icon" , sizes="16x16" />
+    <title>
+        vncpncept - Quản lý đơn hàng
+    </title>
+    <link rel="icon" , href="images/icons/favicon-16x16.png" , type="image/x-icon" , sizes="16x16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tool.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <main id="main">
+            <div class="page__admin flex flex-wrap items-start">
+                <div class="admin__sidebar bg-[#F7F7F7] max-w-[256px] w-full h-screen py-5 px-4">
+                    <div class="amdin__sidebar--header border-b border-[ #EEEEEE] pb-5">
+                        <h3 class="admin__sebar--title text-[#212529] text-base font-semibold">
+                            nguyenson@gmail.com
+                        </h3>
+                    </div>
+                    <div class="admin__sidebar--body pt-4">
+                        <ul class="control grid gap-y-4">
+                            <li class="control__list active">
+                                <div class="flex items-center">
+                                    <a href="admin.page.html" class="control__list--link   flex items-center text=[#212529] hover:text-[#2C6CD5] transition-all text-sm font-semibold" title="">
+                                        <span class="control__list--icon flex items-center w-6 h-6 mr-3">
+                                            <svg width="14" height="18" viewbox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.82812 17.8828H11.1719C12.8828 17.8828 13.7969 16.9609 13.7969 15.2344V3.49219C13.7969 1.75781 12.8828 0.851562 11.1719 0.851562H8.82031C8.51562 0.851562 8.33594 1.02344 8.33594 1.3125C8.33594 2.05469 7.82031 2.64844 7 2.64844C6.17969 2.64844 5.65625 2.05469 5.65625 1.3125C5.65625 1.02344 5.47656 0.851562 5.17188 0.851562H2.82812C1.10938 0.851562 0.203125 1.75781 0.203125 3.49219V15.2344C0.203125 16.9609 1.11719 17.8828 2.82812 17.8828ZM3.00781 16.1406C2.28906 16.1406 1.94531 15.7656 1.94531 15.0859V3.64062C1.94531 2.95312 2.28906 2.58594 3.00781 2.58594H4.45312C4.8125 3.64062 5.75781 4.28125 7 4.28125C8.24219 4.28125 9.1875 3.64062 9.54688 2.58594H10.9922C11.7109 2.58594 12.0547 2.95312 12.0547 3.64062V15.0859C12.0547 15.7656 11.7109 16.1406 10.9922 16.1406H3.00781ZM4.21875 6.96875H9.78125C10.0703 6.96875 10.2891 6.74219 10.2891 6.45312C10.2891 6.17188 10.0703 5.95312 9.78125 5.95312H4.21875C3.92188 5.95312 3.70312 6.17188 3.70312 6.45312C3.70312 6.74219 3.92188 6.96875 4.21875 6.96875ZM4.21875 9.625H6.95312C7.24219 9.625 7.46094 9.41406 7.46094 9.13281C7.46094 8.84375 7.24219 8.61719 6.95312 8.61719H4.21875C3.92188 8.61719 3.70312 8.84375 3.70312 9.13281C3.70312 9.41406 3.92188 9.625 4.21875 9.625Z" fill="#212529" />
+                                            </svg>
+                                        </span>
+                                        <span>Quản lý đơn hàng</span>
+                                    </a>
+                                    <button class="control__show  w-6 h-6 ml-auto">
+                                        <svg class="transition-all" width="7" height="11" viewbox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.75 5.76953C6.75 5.57031 6.67383 5.40039 6.52148 5.24805L1.95117 0.777344C1.82227 0.648438 1.66406 0.583984 1.47656 0.583984C1.0957 0.583984 0.791016 0.876953 0.791016 1.25781C0.791016 1.44531 0.867188 1.61523 0.996094 1.75L5.12109 5.76953L0.996094 9.78906C0.873047 9.91797 0.791016 10.0879 0.791016 10.2754C0.791016 10.6621 1.0957 10.9551 1.47656 10.9551C1.66406 10.9551 1.82227 10.8906 1.95117 10.7617L6.52148 6.29102C6.67969 6.13867 6.75 5.96875 6.75 5.76953Z" fill="#212529" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="control__children">
+                                    <ul class="grid gap-y-4 pl-[34px] pt-4">
+                                        <li>
+                                            <a class="text-[#212529] hover:text-[#2C6CD5] transition-all font-semibold text-sm" href="#">
+                                                item 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-[#212529] hover:text-[#2C6CD5] transition-all font-semibold text-sm" href="#">
+                                                item 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-[#212529] hover:text-[#2C6CD5] transition-all font-semibold text-sm" href="#">
+                                                item 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="control__list">
+                                <div class="flex items-center">
+                                    <a href="#" class="control__list--link  flex items-center text=[#212529] hover:text-[#2C6CD5] transition-all text-sm font-semibold" title="">
+                                        <span class="control__list--icon flex items-center w-6 h-6 mr-3">
+                                            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.3511C12.1895 15.3511 15.6392 11.9014 15.6392 7.71191C15.6392 3.52979 12.1821 0.0727539 7.99268 0.0727539C3.81055 0.0727539 0.36084 3.52979 0.36084 7.71191C0.36084 11.9014 3.81055 15.3511 8 15.3511ZM8 10.2681C6.00781 10.2681 4.4624 10.9712 3.66406 11.8135C2.66064 10.7441 2.04541 9.30127 2.04541 7.71191C2.04541 4.40869 4.68945 1.75 7.99268 1.75C11.3032 1.75 13.9546 4.40869 13.9619 7.71191C13.9619 9.30859 13.3467 10.7441 12.3359 11.8135C11.5449 10.9712 9.99951 10.2681 8 10.2681ZM8 9.08887C9.4209 9.10352 10.5269 7.88037 10.5269 6.31299C10.5269 4.84082 9.41357 3.5957 8 3.5957C6.58643 3.5957 5.4585 4.84082 5.47314 6.31299C5.47314 7.88037 6.5791 9.08154 8 9.08887Z" fill="#212529" />
+                                            </svg>
+                                        </span>
+                                        <span>Tài khoản</span>
+                                    </a>
+                                    <button class="control__show w-6 h-6 ml-auto active">
+                                        <svg class="transition-all" width="7" height="11" viewbox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.75 5.76953C6.75 5.57031 6.67383 5.40039 6.52148 5.24805L1.95117 0.777344C1.82227 0.648438 1.66406 0.583984 1.47656 0.583984C1.0957 0.583984 0.791016 0.876953 0.791016 1.25781C0.791016 1.44531 0.867188 1.61523 0.996094 1.75L5.12109 5.76953L0.996094 9.78906C0.873047 9.91797 0.791016 10.0879 0.791016 10.2754C0.791016 10.6621 1.0957 10.9551 1.47656 10.9551C1.66406 10.9551 1.82227 10.8906 1.95117 10.7617L6.52148 6.29102C6.67969 6.13867 6.75 5.96875 6.75 5.76953Z" fill="#212529" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="control__children" style="display:block">
+                                    <ul class="grid gap-y-4 pl-[34px] pt-4">
+                                        <li class="">
+                                            <a href="AccountInformation.page.html" class="text-[#212529] hover:text-[#2C6CD5] transition-all font-semibold text-sm">
+                                                Thông tin tài khoản
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="resetPasswordAdmin.page.html" class="text-[#212529] hover:text-[#2C6CD5] transition-all font-semibold text-sm">
+                                                Thay đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-[#212529] hover:text-[#2C6CD5] transition-all font-semibold text-sm" href="LogIn.page.html">
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="admin__main max-w-[calc(100%_-_256px)] w-full bg-white  flex flex-col h-screen">
+                    <header class="px-5 pt-5 pb-3 flex items-center border-b border-[#D2D2D2]">
+                        <div class="relative">
+                            <div class="flex items-center border border-[#D2D2D2] rounded max-w-[392px] w-full">
+                                <button class="flex items-center w-6 h-6 flex-shrink-0">
+                                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.89014 10.4463C3.89014 14.0986 6.86182 17.0703 10.5142 17.0703C11.9585 17.0703 13.2783 16.6055 14.3657 15.8252L18.4497 19.9175C18.6406 20.1084 18.8896 20.1997 19.1553 20.1997C19.7197 20.1997 20.1099 19.7764 20.1099 19.2202C20.1099 18.9546 20.0103 18.7139 19.8359 18.5396L15.7769 14.4556C16.6318 13.3433 17.1382 11.957 17.1382 10.4463C17.1382 6.79395 14.1665 3.82227 10.5142 3.82227C6.86182 3.82227 3.89014 6.79395 3.89014 10.4463ZM5.30957 10.4463C5.30957 7.57422 7.64209 5.2417 10.5142 5.2417C13.3862 5.2417 15.7188 7.57422 15.7188 10.4463C15.7188 13.3184 13.3862 15.6509 10.5142 15.6509C7.64209 15.6509 5.30957 13.3184 5.30957 10.4463Z" fill="#212529" />
+                                    </svg>
+                                </button>
+                                <input type="text" placeholder="Tìm kiếm" class="px-1 h-8 max-w-full w-[320px] outline-none text-sm placeholder:text-sm">
+                                <button class="option__search flex items-center w-6 h-6 flex-shrink-0">
+                                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" fill="#F7F7F7" />
+                                        <path d="M14.9717 8.94385C15.835 8.94385 16.5654 8.3877 16.8477 7.62402H19.7197C20.0601 7.62402 20.3589 7.3252 20.3589 6.95166C20.3589 6.57812 20.0601 6.2876 19.7197 6.2876H16.8477C16.5737 5.51562 15.835 4.95117 14.9717 4.95117C14.1084 4.95117 13.3613 5.51562 13.0874 6.2876H4.29688C3.92334 6.2876 3.63281 6.57812 3.63281 6.95166C3.63281 7.3252 3.92334 7.62402 4.29688 7.62402H13.0957C13.3696 8.3877 14.1084 8.94385 14.9717 8.94385ZM14.9717 7.92285C14.4238 7.92285 14.0005 7.49121 14.0005 6.94336C14.0005 6.39551 14.4238 5.97217 14.9717 5.97217C15.5195 5.97217 15.9429 6.39551 15.9429 6.94336C15.9429 7.49121 15.5195 7.92285 14.9717 7.92285ZM4.26367 11.3511C3.92334 11.3511 3.63281 11.6499 3.63281 12.0234C3.63281 12.397 3.92334 12.6875 4.26367 12.6875H7.23535C7.50928 13.4678 8.24805 14.0239 9.11133 14.0239C9.97461 14.0239 10.7134 13.4678 10.9956 12.6875H19.6865C20.0601 12.6875 20.3589 12.397 20.3589 12.0234C20.3589 11.6499 20.0601 11.3511 19.6865 11.3511H10.9873C10.7134 10.5874 9.97461 10.0312 9.11133 10.0312C8.24805 10.0312 7.50928 10.5874 7.23535 11.3511H4.26367ZM9.11133 12.9946C8.57178 12.9946 8.14014 12.563 8.14014 12.0234C8.14014 11.4756 8.57178 11.0522 9.11133 11.0522C9.65918 11.0522 10.0825 11.4756 10.0825 12.0234C10.0825 12.563 9.65918 12.9946 9.11133 12.9946ZM14.9717 19.0874C15.835 19.0874 16.5737 18.5312 16.8477 17.7593H19.7197C20.0601 17.7593 20.3589 17.4688 20.3589 17.0952C20.3589 16.7217 20.0601 16.4229 19.7197 16.4229H16.8477C16.5737 15.6509 15.835 15.103 14.9717 15.103C14.1084 15.103 13.3696 15.6509 13.0957 16.4229H4.29688C3.92334 16.4229 3.63281 16.7217 3.63281 17.0952C3.63281 17.4688 3.92334 17.7593 4.29688 17.7593H13.0874C13.3696 18.5312 14.1084 19.0874 14.9717 19.0874ZM14.9717 18.0664C14.4238 18.0664 14.0005 17.6348 14.0005 17.0952C14.0005 16.5391 14.4238 16.124 14.9717 16.124C15.5195 16.124 15.9429 16.5391 15.9429 17.0952C15.9429 17.6348 15.5195 18.0664 14.9717 18.0664Z" fill="#212529" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <div class="search__box hidden">
+                                <div class=" absolute grid gap-y-6 left-0 top-full  p-4 w-[488px] bg-white border border-[#D2D2D2] rounded shadow-[0px_8px_15px_rgba(0,0,0,0.15)]">
+                                    <div class="flex items-center">
+                                        <label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
+                                            Từ
+                                        </label>
+                                        <input type="text" class="w-full  text-sm border-b border-[ #D2D2D2] outline-none">
+                                    </div>
+                                    <div class="flex items-center">
+                                        <label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
+                                            Tới
+                                        </label>
+                                        <input type="text" class="w-full  text-sm border-b border-[ #D2D2D2] outline-none">
+                                    </div>
+                                    <div class="flex items-center">
+                                        <label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
+                                            Ngày trong khoảng
+                                        </label>
+                                        <div class="w-full">
+                                            <select class="select-admin">
+                                                <option value="">1 ngày</option>
+                                                <option value="">3 ngày</option>
+                                                <option value="">1 tuần</option>
+                                                <option value="">2 tuần</option>
+                                                <option value="">1 tháng</option>
+                                                <option value="">2 tháng</option>
+                                            </select>
+                                        </div>
+
+                                        <input type="date" class="w-full h-7 text-sm border-b border-[ #D2D2D2] outline-none">
+                                    </div>
+                                    <div class="text-right">
+                                        <button class="text-white rounded bg-[#2C6CD5] py-1 px-2 text-sm">
+                                            Tìm kiếm
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 ml-auto">
+                            <p class="text=[#212529] text-sm font-semibold">
+                                Doanh số đến thời điểm
+                            </p>
+                            <div class="w-[100px] time__select">
+                                <select class="select-admin">
+                                    <option value="">Tháng</option>
+                                    <option value="">
+                                        Năm</option>
+
+                                </select>
+                            </div>
+                            <span class="flex px-3 py-[7px] font-semibold h-8 justify-center items-center text-[#2C6CD5] rounded border border-[#2C6CD5]">
+                                2.000.0000
+                            </span>
+                        </div>
+                    </header>
+
+                    <div class="admin__main-body px-5 py-3">
+                        <div class="overflow-auto">
+                            <table class="table w-full text-sm text-left min-w-[700px]">
+                                <thead>
+                                    <tr>
+                                        <th class="border-[0.5px] w-10 px-2 py-[10px] border-[#D2D2D2]">
+                                            <input type="checkbox" />
+                                        </th>
+                                        <th class="w-[52px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            STT
+                                        </th>
+                                        <th class="w-[113px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Mã đơn
+                                        </th>
+                                        <th class="w-[108px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Tình trạng
+                                        </th>
+                                        <th class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Người nhận
+                                        </th>
+                                        <th class="w-[306px] border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Địa chỉ giao hàng
+                                        </th>
+                                        <th class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            SĐT người nhận
+                                        </th>
+                                        <th class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Ngày giao
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <input checked type="checkbox" />
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            1
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            EG123456
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <span class="bg-[#A3C6FF] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+                                                Đang giao
+                                            </span>
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Nguyễn Văn Sơn
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            885 Tam Trinh, Hoàng Mai, Hà Nội
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            0377401079
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            20/03/20222
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            2
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            EG123456
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <span class="bg-[#73FF81] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+                                                Đã giao
+                                            </span>
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Nguyễn Văn Sơn
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            885 Tam Trinh, Hoàng Mai, Hà Nội
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            0377401079
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            20/03/20222
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            3
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            EG123456
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <span class="bg-[#FFA6A6] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+                                                Đã hủy
+                                            </span>
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Nguyễn Văn Sơn
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            885 Tam Trinh, Hoàng Mai, Hà Nội
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            0377401079
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            20/03/20222
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            4
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            EG123456
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            <span class="bg-[#FFDE67] text-sm text-p#212529] p-1 flex justify-center items-center rounded">
+                                                Chờ giao
+                                            </span>
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            Nguyễn Văn Sơn
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            885 Tam Trinh, Hoàng Mai, Hà Nội
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            0377401079
+                                        </td>
+                                        <td class="border-[0.5px] px-2 py-[10px] border-[#D2D2D2]">
+                                            20/03/20222
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="text-[#212529] flex items-center justify-end gap-x-8 mt-auto px-5 py-3">
+                        <span>
+                            Số lượng hiển thị:
+                        </span>
+                        <div class="rounded border border-[#D2D2D2] flex items-center select__pagination">
+                            <select class="select-admin">
+                                <option value="">40</option>
+                                <option value="">30</option>
+                                <option value="">20</option>
+                            </select>
+                            <span class="bg-[#D2D2D2] h-6 flex justify-center items-center px-2">
+                                / trang
+                            </span>
+                        </div>
+
+                        <ul class="pagination flex my-10">
+                            <li class="pagination-items pagination__prev pagination__no">
+                                <a href="#" class="pagination-item-link text__black--900 ">
+                                    <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1153_2177)">
+                                            <g opacity="0.6">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.9414V8.94141H9V12.9414V16.9414H8ZM9 12.9414L15 8.94141V16.9414L9 12.9414Z" fill="#212529" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1153_2177">
+                                                <rect width="24" height="24" fill="white" transform="translate(0 0.941406)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination__prev pagination__no">
+                                <a href="#" class="pagination-item-link text__black--900">
+                                    <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.6">
+                                            <path d="M9 12.9414L15 8.94141V16.9414L9 12.9414Z" fill="#212529" />
+                                        </g>
+                                    </svg>
+
+                                </a>
+                            </li>
+
+                            <li class="pagination-item active">
+                                <a href="#" class="pagination-item-link text__black--900">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link text__black--900">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link text__black--900">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                ...
+                            </li>
+                            <li class="pagination-item pagination__next">
+                                <a href="#" class="pagination-item-link text__black--900 ">
+                                    <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1153_2223)">
+                                            <path d="M15 12.9414L9 16.9414V8.94141L15 12.9414Z" fill="#212529" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1153_2223">
+                                                <rect width="24" height="24" fill="white" transform="translate(0 0.941406)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="pagination-item  pagination__next--all">
+                                <a href="#" class="pagination-item-link text__black--900">
+                                    <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1153_2228)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 12.9414L8 8.94141V16.9414L14 12.9414ZM14 12.9414V16.9414H15V8.94141H14V12.9414Z" fill="#212529" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1153_2228">
+                                                <rect width="24" height="24" fill="white" transform="translate(0 0.941406)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script type="text/javascript" src="js/plugins/jquery.js"></script>
+    <script type"text/javascript" src="js/plugins/slick.js"></script>
+    <script type"text/javascript" src="js/plugins/tab.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="./js/plugins/jquery-custome-select.js"></script>
+
+</body>
+
+</html>

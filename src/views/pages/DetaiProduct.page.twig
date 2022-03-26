@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 	<div class="container">
-		<div class="page__detail pt-7 pb-20">
+		<div class="page__detail pt-7 pb-8">
 			<ul class="text-[#868E96] flex items-center text-sm gap-[13px] breadcrumb">
 				<li>
 					<a href="product.page.html" title="Sản phẩm">Sản phẩm</a>
@@ -28,9 +28,364 @@
 					</div>
 				</div>
 			</div>
+			<h2 class="text-lg font-bold mt-12 mb-5">
+				Màu sắc sản phẩm
+			</h2>
+			<div class="grid gap-x-8 gap-y-4 grid-cols-5 items-start">
+				{% for item in 1..4 %}
+					<label class="check__color--product cursor-pointer hover:opacity-80 transition-all" for="skin-color-{{loop.index}}">
+						<input class="hidden" {% if loop.index == 1 %} checked {% endif %} type="checkbox" id="skin-color-{{loop.index}}">
+						<div class="thumbnail h-20 overflow-hidden">
+							<img class="max-w-full w-full h-full object-cover" src="images/color-{{loop.index}}.svg" alt="">
+						</div>
+						<h3 class="text-[#232323] text-sm mt-2">
+							Trắng
+						</h3>
+					</label>
+
+				{% endfor %}
+				<div modal-show="show" modal-data="#option" class="relative cursor-pointer flex items-center justify-center border border-[#BFBFBF] text-[ #343A40] h-20  rounded-[8px_8px_8px_0]">
+					<svg width="17" height="15" viewbox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.1973 4.98438C12.041 4.98438 12.7598 4.46094 13.0566 3.71875H15.6426C16.0254 3.71875 16.3535 3.38281 16.3535 2.97656C16.3535 2.57031 16.0332 2.23438 15.6426 2.23438H13.0645C12.7676 1.49219 12.041 0.96875 11.1973 0.96875C10.3535 0.96875 9.62695 1.49219 9.33008 2.23438L0.978515 2.23438C0.564453 2.23438 0.24414 2.57031 0.24414 2.97656C0.24414 3.38281 0.572265 3.71875 0.978515 3.71875H9.33008C9.62695 4.46094 10.3535 4.98438 11.1973 4.98438ZM11.1973 3.92969C10.666 3.92969 10.2363 3.50781 10.2363 2.97656C10.2363 2.42969 10.666 2.01563 11.1973 2.01563C11.7363 2.01563 12.1504 2.42969 12.1504 2.97656C12.1504 3.50781 11.7363 3.92969 11.1973 3.92969ZM0.947265 7.10156C0.564453 7.10156 0.24414 7.42969 0.24414 7.84375C0.24414 8.24219 0.572265 8.57812 0.947265 8.57812H3.62695C3.91602 9.32031 4.64258 9.85156 5.49414 9.85156C6.33008 9.85156 7.05664 9.32031 7.35352 8.57812L15.6191 8.57813C16.0254 8.57813 16.3535 8.25 16.3535 7.84375C16.3535 7.42969 16.0332 7.10156 15.6191 7.10156L7.35352 7.10156C7.05664 6.35938 6.33008 5.83594 5.49414 5.83594C4.65039 5.83594 3.92383 6.35938 3.62695 7.10156H0.947265ZM5.49414 8.79688C4.95508 8.79688 4.5332 8.375 4.5332 7.84375C4.5332 7.29688 4.95508 6.88281 5.49414 6.88281C6.0332 6.88281 6.44727 7.29688 6.44727 7.84375C6.44727 8.375 6.0332 8.79688 5.49414 8.79688ZM11.1973 14.7109C12.041 14.7109 12.7676 14.1875 13.0645 13.4453H15.6426C16.0254 13.4453 16.3535 13.1094 16.3535 12.7031C16.3535 12.2891 16.0332 11.9609 15.6426 11.9609H13.0566C12.7676 11.2188 12.041 10.6953 11.1973 10.6953C10.3535 10.6953 9.62695 11.2188 9.33008 11.9609H0.978515C0.564453 11.9609 0.24414 12.2969 0.24414 12.7031C0.24414 13.1094 0.572265 13.4453 0.978515 13.4453H9.33008C9.62695 14.1875 10.3535 14.7109 11.1973 14.7109ZM11.1973 13.6641C10.666 13.6641 10.2363 13.2344 10.2363 12.7031C10.2363 12.1641 10.666 11.7422 11.1973 11.7422C11.7363 11.7422 12.1504 12.1641 12.1504 12.7031C12.1504 13.2344 11.7363 13.6641 11.1973 13.6641Z" fill="#232323"/>
+					</svg>
+
+					<span class="ml-1 text-base">
+						Tùy chọn khác
+					</span>
+					<span class="flex items-center justify-center rounded-full overflow-hidden min-w-[26px] min-h-[26px] text-white bg-[#232323] absolute -top-[15px] -right-[15px] text-sm">
+						2
+					</span>
+				</div>
+			</div>
+			<div class="mt-8 flex items-start flex-wrap border-t border-[#EEEEEE] pt-12">
+				<div class="detail__content max-w-[calc(100%_-_389px)] w-full pr-[119px]">
+					<h1 class="text-[#212529] font-bold text-[32px]">
+						Sofa Moderna 2 seater
+					</h1>
+					{% include "../components/Detail.component.twig" %}
+				</div>
+				<div class="sticky top-5 detail__total grid gap-y-8 max-w-[389px] w-full flex-shrink-0  py-8 px-4 border-[0.5px] border-[#BFBFBF] rounded-lg overflow-hidden">
+					<div class="detail__total-header flex items-center ">
+						<div class="total__left">
+							<p class="text-[#868E96] text-sm mb-1">
+								Giá từ
+							</p>
+							<span class="total__price text-[#212529] font-semibold">
+								48.490.000đ
+							</span>
+						</div>
+						<span class="like w-6 h-6  flex items-center  justify-center ml-auto">
+							<svg width="18" height="16" viewbox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.757324 5.65771C0.757324 9.19385 3.7207 12.6719 8.40234 15.6602C8.57666 15.7681 8.82568 15.8843 9 15.8843C9.17432 15.8843 9.42334 15.7681 9.60596 15.6602C14.2793 12.6719 17.2427 9.19385 17.2427 5.65771C17.2427 2.71924 15.2256 0.644043 12.5361 0.644043C11.0005 0.644043 9.75537 1.37451 9 2.49512C8.26123 1.38281 6.99951 0.644043 5.46387 0.644043C2.77441 0.644043 0.757324 2.71924 0.757324 5.65771ZM2.09375 5.65771C2.09375 3.44971 3.52148 1.98047 5.44727 1.98047C7.00781 1.98047 7.9043 2.95166 8.43555 3.78174C8.65967 4.11377 8.80078 4.20508 9 4.20508C9.19922 4.20508 9.32373 4.10547 9.56445 3.78174C10.1372 2.96826 11.0005 1.98047 12.5527 1.98047C14.4785 1.98047 15.9062 3.44971 15.9062 5.65771C15.9062 8.74561 12.644 12.0742 9.17432 14.3818C9.09131 14.4399 9.0332 14.4814 9 14.4814C8.9668 14.4814 8.90869 14.4399 8.83398 14.3818C5.35596 12.0742 2.09375 8.74561 2.09375 5.65771Z" fill="#212529"/>
+							</svg>
+							<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 19.8843C12.1743 19.8843 12.4233 19.7681 12.606 19.6602C17.2793 16.6719 20.2427 13.1938 20.2427 9.65771C20.2427 6.71924 18.2256 4.64404 15.6191 4.64404C14.0005 4.64404 12.7554 5.54053 12 6.91016C11.2612 5.54883 9.99951 4.64404 8.38086 4.64404C5.77441 4.64404 3.75732 6.71924 3.75732 9.65771C3.75732 13.1938 6.7207 16.6719 11.4023 19.6602C11.5767 19.7681 11.8257 19.8843 12 19.8843Z" fill="#212529"/>
+							</svg>
+						</span>
+					</div>
+					<button class="hover:opacity-80 transition-all flex items-center justify-center text-white h-[46px] w-full bg-[#232323] text-base">
+						Thêm vào giỏ hàng
+					</button>
+					<a href="#" class="hover:opacity-80 transition-all flex items-center justify-center text-white h-[46px] w-full bg-[#868E96] text-base">
+						Tải hình ảnh 3D của sản phẩm
+					</a>
+				</div>
+			</div>
+			<div class="similar__products border-t border-[#EEEEEE] pt-12 mt-20">
+				<h2 class="similar__products--title text-[#212529] text-lg font-bold">
+					Các sản phẩm tương tự
+				</h2>
+
+				<div class="-mx-2">
+					<div class="slide__similar">
+						{% set products = [
+                        {
+                        id:1,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:2,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:3,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:4,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:5,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:6,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:7,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:8,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:9,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:10,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:11,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:12,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:13,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:14,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:15,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    }] %}
+						{% for product in products %}
+
+							<div class="similar__item">
+
+								<div class="similar__box pt-6 pb-12 px-2">
+									{% include "../components/propducts/ProductItem2.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link, sale:product.sale}  %}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<h2 class="similar__products--title text-[#212529] text-lg font-bold">
+					Các sản phẩm bạn đã xem
+				</h2>
+
+				<div class="-mx-2">
+					<div class="slide__similar">
+						{% set products = [
+                        {
+                        id:1,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:2,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:3,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:4,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html",
+                        sale:true
+                    },
+                    {
+                        id:5,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:6,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:7,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:8,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:9,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:10,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:11,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:12,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:13,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                     {
+                        id:14,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    },
+                    {
+                        id:15,
+                        title:"Sofa Modena 2 seater",
+                        target:"Gỗ sồi, Gỗ keo, Thép không gỉ",
+                        price:"7.590.000",
+                        thumbnail:"product__page.png",
+                        link:"DetaiProduct.page.html"
+                    }] %}
+						{% for product in products %}
+
+							<div class="similar__item">
+
+								<div class="similar__box pt-6 pb-12 px-2">
+									{% include "../components/propducts/ProductItem2.component.twig" with {title:product.title, target:product.target, price:product.price, thumbnail:product.thumbnail, link:product.link, sale:product.sale}  %}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
 		</div>
-
-
+	</div>
+	<div class="bs-modal modal__recruit !m-0 !p-0" id="option">
+		<div class="modal-frame">
+			<div class="content-modal max-w-[611px] w-full h-full bg-white ml-auto !mr-0 !my-0">
+				{% include "../components/OptionClore.component.twig" %}
+			</div>
+		</div>
 	</div>
 {% endblock %}
 {% block scriptPage %}
@@ -47,6 +402,26 @@ autoplay: true
 })
 }
 album()
+
+function group() {
+$('.group__header').on("click", function () {
+$(this).toggleClass('active');
+$(this).next('.group__body').slideToggle();
+})
+}
+group()
+
+function silderSimilar() {
+$('.slide__similar').slick({
+dots: false,
+arrow: true,
+infinite: true,
+slidesToShow: 4,
+slidesToScroll: 3,
+autoplay: true
+})
+}
+silderSimilar()
 })
 	</script>
 {% endblock %}

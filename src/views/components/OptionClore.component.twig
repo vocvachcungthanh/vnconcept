@@ -1,0 +1,68 @@
+<div class="module__option  pt-6 flex flex-col h-full">
+	<div class="module__option-header flex items-center mb-10 px-10">
+		<h3 class="text-black font-semibold text-2xl">
+			Lựa chọn
+		</h3>
+		<span title="close" modal-show="close" class="w-5 cursor-pointer ml-auto">
+			<svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.758789 13.9043C1.06641 14.2031 1.57617 14.2031 1.875 13.9043L7.5 8.2793L13.125 13.9043C13.4238 14.2031 13.9424 14.2119 14.2412 13.9043C14.54 13.5967 14.54 13.0957 14.2412 12.7969L8.61621 7.16309L14.2412 1.53809C14.54 1.23926 14.5488 0.729492 14.2412 0.430664C13.9336 0.123047 13.4238 0.123047 13.125 0.430664L7.5 6.05566L1.875 0.430664C1.57617 0.123047 1.05762 0.114258 0.758789 0.430664C0.459961 0.738281 0.459961 1.23926 0.758789 1.53809L6.38379 7.16309L0.758789 12.7969C0.459961 13.0957 0.451172 13.6055 0.758789 13.9043Z" fill="#232323"/>
+			</svg>
+
+		</span>
+	</div>
+	<div class="module__option--body px-10 grid gap-y-6 overflow-y-auto mb-3">
+		<div class="option__box">
+			<h3 class="text-[#212529] text-base font-semibold mb-4">
+				Màu sắc da
+			</h3>
+			<div class="grid gap-4 grid-cols-4 items-start">
+				{% for item in 1..8 %}
+					<label class="check__color--product cursor-pointer hover:opacity-80 transition-all" for="skin-color-{{loop.index + 5}}">
+						<input class="hidden" {% if loop.index == 1 or loop.index == 2 %} checked {% endif %} type="checkbox" id="skin-color-{{loop.index + 5}}">
+						<div class="thumbnail h-20 overflow-hidden rounded-lg">
+							<img class="max-w-full w-full h-full object-cover" src="images/skin-color-{{loop.index}}.svg" alt="">
+						</div>
+						<h3 class="text-[#232323] text-sm mt-2">
+							Trắng
+							{{loop.index}}
+						</h3>
+					</label>
+
+				{% endfor %}
+
+			</div>
+		</div>
+
+		<div class="option__box">
+			<h3 class="text-[#212529] text-base font-semibold mb-4">
+				Màu sắc da
+			</h3>
+			<div class="grid gap-4 grid-cols-4 items-start">
+				{% for item in 1..8 %}
+					<label class="check__color--product cursor-pointer hover:opacity-80 transition-all" for="skin-color-{{loop.index + 13}}">
+						<input class="hidden" type="checkbox" id="skin-color-{{loop.index + 13}}">
+						<div class="thumbnail h-20 overflow-hidden rounded-lg">
+							<img class="max-w-full w-full h-full object-cover" src="images/skin-color-{{loop.index + 8}}.svg" alt="">
+						</div>
+						<h3 class="text-[#232323] text-sm mt-2">
+							Trắng
+							{{loop.index}}
+						</h3>
+					</label>
+
+				{% endfor %}
+
+			</div>
+		</div>
+
+	</div>
+	<div class=" bg-white option__footer flex mt-auto items-center py-3 px-6 shadow-[0px_-0.5px_0px_rgba(0,0,0,0.2)]">
+		<a href="#" title="Xóa tất cả" class="text=[#232323] text-sm">
+			Xóa tất cả
+		</a>
+
+		<button class="text-white ml-auto flex justify-center items-center bg-[#232323] max-w-[143px] w-full h-[42px]">
+			Áp dụng (2)
+		</button>
+	</div>
+</div>

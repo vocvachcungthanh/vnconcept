@@ -3456,6 +3456,11 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+jquery-custom-select@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/jquery-custom-select/-/jquery-custom-select-1.6.4.tgz#bd6b72987d09b3315ef13ffeee5ac7d496215080"
+  integrity sha512-1oBPrzxOcMLedxo5XWa3zgX69nYms7YGSP2UVoeZNwzWE5TOe+kS98pz9Bk3pgYykow718g/+Azsn7bu6JjTUA==
+
 jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"

@@ -1,0 +1,36 @@
+.page__detail {
+    .detail__content {
+        .group {
+            .group__header {
+                &.active {
+                    span {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            &:not(:first-child) {
+                border-top: 1px solid #eeeeee;
+            }
+            .group__body {
+                table {
+                    tr {
+                        td,
+                        th {
+                            line-height: 22.4px;
+                            min-height: 62px;
+                            height: 62px;
+                            &:not(:last-child) {
+                                border-right: 0.5px solid #bfbfbf;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            border-top: 0.5px solid #bfbfbf;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
