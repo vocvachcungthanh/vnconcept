@@ -4,12 +4,12 @@
 	vncpncept - Trang chủ
 {% endblock %}
 {% block content %}
-	<div class="container">
+	<div class="container__wrapper">
 		<div class="relative banner__home">
 			<div class="relative pt-[38.334%] mt-[25px] overflow-hidden">
-				<img src="images/banner__home.jpg" alt="banner__home.jpg" class="w-full object-cover absolute top-0 left-0 right-0 bottom-0">
+				<img src="images/banner__home.jpg" alt="banner__home.jpg" class="w-full h-full object-cover absolute top-0 left-0 right-0 bottom-0">
 			</div>
-			<div class="p-[60px] absolute top-0 left-0 right-0  bottom-0 z-2">
+			<div class="banner__content p-[60px] absolute top-0 left-0 right-0  bottom-0 z-2">
 				<h1 class="text-white font-black text-[40px] text-shadow">
 					Làn gió mới cho
 					<br>
@@ -17,15 +17,15 @@
 				</h1>
 			</div>
 		</div>
-		<div class="mt-[60px]">
+		<div class="mt-[60px] category__product">
 			{% include "../components/TitleGlobal.component.twig" with { title:"Danh mục sản phẩm"} %}
 			{% include "../components/ProductPortfolio.twig" %}
 		</div>
-		<div class="mt-[60px]">
+		<div class="mt-[60px] sofa__product">
 			{% include "../components/TitleGlobal.component.twig" with { title:"Sofa bộ nhập khẩu châu Âu", link:"product.page.html"} %}
 			{% include "../components/home/SofaImport.component.twig" %}
 		</div>
-		<div>
+		<div class="sofa__chapeau">
 			{% include "../components/TitleGlobal.component.twig" with { title:"Sofa rời nhập khẩu châu Âu", link:"product.page.html"} %}
 			<div class="grid grid-cols-3 gap-4  sofa-import mt-4">
 				{% set
@@ -61,7 +61,7 @@
 			</div>
 
 		</div>
-		<div>
+		<div class="section__carpet">
 			{% include "../components/TitleGlobal.component.twig" with { title:"Thảm", link:"product.page.html"} %}
 			<div class="grid grid-cols-2 gap-4 mt-4 carpet ">
 				{% set
@@ -91,7 +91,7 @@
 
 		</div>
 
-		<div class="flex items-start flex-wrap mb-[140px]">
+		<div class="album__container flex items-start flex-wrap mb-[140px]">
 			<div class="flex-shrink-0 max-w-[389px] w-full">
 				<h2 class="text-[#232323] font-semibold text-[32px]">
 					Bộ sưu tập nội thất từ các nhà thiết kế
@@ -132,7 +132,18 @@ arrow: true,
 infinite: true,
 slidesToShow: 2,
 slidesToScroll: 1,
-autoplay: true
+autoplay: true,
+responsive: [
+{
+breakpoint: 1024,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1,
+infinite: true,
+dots: true
+}
+}
+]
 })
 }
 album()

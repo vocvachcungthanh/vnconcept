@@ -1,14 +1,107 @@
-<ul class="menu__addon flex justify-center items-center ml-[59.35px]">
-	{% for menu in menus %}
-		<li class="{{menu.status == pageStatus ? 'active' : ''}}">
-			<a href="{{menu.link}}" title="{{menu.name}}" class="menu__link flex text-white text-transparent-unp uppercase text-base px-4 pt-[26px] pb-[22px]">
-				{{menu.name}}
-			</a>
-			<div class="menu__omega absolute opacity-0 translate-y-5 left-0 right-0 top-full bg-white z-50 w-full shadow-[0px_8px_15px_rgba(0,0,0,0.15)] pt-6 pb-12">
-				<div class="container">
-					{% include "./addon-tab.twig" %}
+<div class="menu__container">
+	<ul class="menu__addon flex justify-center items-center ml-[59.35px]">
+		{% for menu in menus %}
+			<li class=" {{menu.status == pageStatus ? 'active' : ''}}">
+				<a href="{{menu.link}}" title="{{menu.name}}" class="menu__link flex text-white text-transparent-unp uppercase text-base px-4 pt-[26px] pb-[22px]">
+					{{menu.name}}
+				</a>
+				<div class="menu__omega absolute opacity-0 translate-y-5 left-0 right-0 top-full bg-white z-50 w-full shadow-[0px_8px_15px_rgba(0,0,0,0.15)] pt-6 pb-12">
+					<div class="container__wrapper">
+						{% include "./addon-tab.twig" %}
+					</div>
+
 				</div>
-			</div>
-		</li>
-	{% endfor %}
-</ul>
+				<ul class="menu__mobile">
+					<li>
+						<a href="#" title="Sofas" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Sofas
+						</a>
+						<ul class="hidden">
+							<li>
+								<h3 class="text-[#BFBFBF] font-semibold text-sm mb-4">
+									By Style
+								</h3>
+								<div class="gap gap-y-3">
+									<a href="#" class="flex hover:opacity-80 w-full items-center text-[#424242] text-base py-1" title="Sofas">
+										Sofas
+									</a>
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base px-1" title="Real leather Sofas">
+										Real leather Sofas
+									</a>
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="Simily leather Sofas">
+										Simily leather Sofas
+									</a>
+
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="Felt Sofas">
+										Felt Sofas
+									</a>
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="Office Sofas">
+										Office Sofas
+									</a>
+								</div>
+							</li>
+							<li>
+								<h3 class="text-[#BFBFBF] font-semibold text-sm mb-4">
+									By Size
+								</h3>
+								<div class="gap gap-y-3">
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="1 seater sofas">
+										1 seater sofas
+									</a>
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base px-1" title="2 seater sofas">
+										2 seater sofas
+									</a>
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="3 seater sofas">
+										3 seater sofas
+									</a>
+
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="Corner sofas">
+										Corner sofas
+									</a>
+									<a href="#" class="flex w-full hover:opacity-80 items-center text-[#424242] text-base py-1" title="Set sofas">
+										Set sofas
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Amchairs " class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Amchairs
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Chairs" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Chairs
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Beds" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Beds
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Tables" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Tables
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Lamps" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Lamps
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Rugs" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Rugs
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Decor" class="cursor-pointer flex items-center  px-7 py-[10px]  text-[#232323] text-base">
+							Decor
+						</a>
+					</li>
+				</ul>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

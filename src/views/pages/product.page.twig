@@ -4,7 +4,7 @@
 	vncpncept - product
 {% endblock %}
 {% block content %}
-	<div class="container">
+	<div class="container__wrapper">
 		<div class="page__product flex flex-wrap items-start pt-[43px]">
 			<div class="page__product--sidebar flex-shrink-0 max-w-[187px] w-full grid gap-4 mb-4">
 				<div class="sidebar__box active border-t border-[#EEEEEE] pt-4">
@@ -227,7 +227,7 @@
 					<img src="images/banner__product.png" alt="banner__product.png w-full">
 				</div>
 
-				<div class="grid gap-4 grid-cols-3">
+				<div class="page__product--group  grid gap-4 grid-cols-3">
 					{% set
                 products = [
                         {
@@ -407,7 +407,22 @@ arrow: true,
 infinite: true,
 slidesToShow: 3,
 slidesToScroll: 1,
-autoplay: true
+autoplay: true,
+responsive: [
+{
+breakpoint: 991.98,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 1
+}
+}, {
+breakpoint: 400.98,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
+]
 })
 }
 album()

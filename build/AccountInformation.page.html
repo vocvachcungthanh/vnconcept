@@ -114,7 +114,7 @@
                 <div class="admin__main max-w-[calc(100%_-_256px)] w-full bg-white  flex flex-col h-screen">
 
 
-                    <div class="admin__main-body px-5 py-[100px]">
+                    <div class="admin__main-body px-5 lg:py-[100px]">
                         <form action="" class="contact__body--form max-w-[479px] w-full mx-auto tex-[#212529] text-sm bg-white rounded-lg">
 
                             <div class="py-6">
@@ -147,7 +147,7 @@
                                         Ngày tháng năm sinh
                                         <sup class="text-red-500 ">*</sup>
                                     </label>
-                                    <div class="grid gap-3 grid-cols-3">
+                                    <div class="grid gap-3 sm:grid-cols-3">
                                         <select class="w-full border border-[#D2D2D2] h-10 rounded  text-[#212529] text-sm outline-none placeholder:text-[#868E96] select">
                                             <option value="">
                                                 1
@@ -294,7 +294,7 @@
                                         Ngày tháng năm sinh
                                         <sup class="text-red-600 ">*</sup>
                                     </label>
-                                    <div class="grid gap-3 grid-cols-3">
+                                    <div class="grid gap-3 sm:grid-cols-3">
                                         <select class="w-full border border-[#D2D2D2] h-10 rounded  text-[#212529] text-sm outline-none placeholder:text-[#868E96] select">
                                             <option value="">Tỉnh/Thành phố</option>
                                         </select>
@@ -333,7 +333,13 @@
     <script type"text/javascript" src="js/plugins/tab.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="./js/plugins/jquery-custome-select.js"></script>
-
+    <script>
+        $(document).ready(function() {
+            $('.menuAdmin').on("click", function() {
+                $('.page__admin').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 
 </html>

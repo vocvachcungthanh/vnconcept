@@ -4,14 +4,14 @@
 	vncpncept - rooms
 {% endblock %}
 {% block content %}
-	<div class="container">
+	<div class="container__wrapper">
 		<div class="page__rooms pt-[70px] mb-11">
 			<h1 class="text-center text-[40px] text-[#212529]">
 				Phòng khách PK0001
 			</h1>
 			<p class="text-center text-[#212529] text-lg max-w-[794px] w-full mx-auto mt-[14px]">
 				Khám phá những phòng khách đẹp để tạo cảm hứng cho không gian cá nhân của bạn.
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	Dưới đây, chúng tôi mời bạn chiêm ngưỡng những phòng khách đẹp với những đường nét thiết kế tốt nhất, mới nhất, hiện đại nhất.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					Dưới đây, chúng tôi mời bạn chiêm ngưỡng những phòng khách đẹp với những đường nét thiết kế tốt nhất, mới nhất, hiện đại nhất.
 			</p>
 		</div>
 
@@ -146,7 +146,28 @@ arrow: true,
 infinite: true,
 slidesToShow: 4,
 slidesToScroll: 1,
-autoplay: true
+autoplay: true,
+responsive: [
+{
+breakpoint: 991.98,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 1
+}
+}, {
+breakpoint: 767.98,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 1
+}
+}, {
+breakpoint: 479.98,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
+]
 })
 }
 album()

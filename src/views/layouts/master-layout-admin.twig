@@ -27,7 +27,13 @@
 
 			{% include "../includes/scripts.twig" %}
 			<script src="./js/plugins/jquery-custome-select.js"></script>
-
+			<script>
+				$(document).ready(function () {
+$('.menuAdmin').on("click", function () {
+$('.page__admin').toggleClass('active');
+})
+})
+			</script>
 			{% block scriptPage %}{% endblock %}
 		</body>
 

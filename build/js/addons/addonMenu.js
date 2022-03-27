@@ -27,7 +27,7 @@ openMenu = () => {
 openMenu();
 
 closeMenu = () => {
-    let menusClass = $(".box__container");
+    let menusClass = $(".box__container__wrapper");
     $(".box__menu").on("click", function (e) {
         if (!menusClass.is(e.target) && menusClass.has(e.target).length === 0) {
             // $("body").removeClass("body__hidden");

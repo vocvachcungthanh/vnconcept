@@ -45,6 +45,7 @@ body {
     @components
 **/
 @import "./component/header";
+@import "./component/footer";
 @import "./component/detailProduct";
 @import "./component/page__admin";
 /**
@@ -53,11 +54,10 @@ body {
 @import "./addon/addon-table";
 @import "./addon/addon-pagination";
 @import "./addon/bs-modal";
-.container {
-    max-width: 1230px;
-    width: 100%;
-    margin: auto;
-    padding: 0 15px;
+.slick-slider {
+    &.slick-slider {
+        margin-bottom: 0;
+    }
 }
 .text-shadow {
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
@@ -426,5 +426,578 @@ body {
 .submit {
     &.active {
         background-color: #232323 !important;
+    }
+}
+
+.container__wrapper {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0px 15px;
+}
+@media (max-width: 1390.98px) {
+    .same-slide {
+        .slick-arrow {
+            &.slick-prev {
+                left: 20px;
+            }
+            &.slick-next {
+                right: 20px;
+            }
+        }
+    }
+    .page__detail {
+        .slide__product {
+            .slick-arrow {
+                &.slick-prev {
+                    left: 20px;
+                }
+                &.slick-next {
+                    right: 20px;
+                }
+            }
+        }
+    }
+    .slide__similar {
+        .slick-arrow {
+            &.slick-prev {
+                left: 10px;
+            }
+            &.slick-next {
+                right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .category__product,
+    .sofa__product {
+        margin-top: 40px;
+    }
+    .product__portfolio {
+        .product__portfolio--item {
+            margin-bottom: 0;
+        }
+    }
+    .sofa__product {
+        .product__item {
+            margin-bottom: 40px;
+        }
+    }
+    .sofa-import {
+        .product__item {
+            margin-bottom: 40px;
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    .carpet {
+        .product__item {
+            margin-bottom: 40px;
+        }
+    }
+    .slide__album {
+        .album {
+            transform: unset;
+            margin-left: unset;
+            .album__item {
+                .album__box {
+                    .album__image {
+                        height: 332px;
+                    }
+                }
+            }
+            .slick-arrow {
+                &.slick-next {
+                    left: -60%;
+                }
+                &.slick-prev {
+                    left: -72%;
+                }
+            }
+        }
+    }
+    .album__container {
+        margin-bottom: 40px;
+    }
+    .btn__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            transition: 0.2s all;
+            transform: rotate(0deg);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        &.active {
+            span {
+                transition: 0.2s all;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .page__product {
+        padding-top: 40px;
+        .page__product--content {
+            padding-left: 30px;
+            .page__product--group {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    }
+    .page__rooms {
+        padding-top: 40px;
+    }
+    .rooms__one {
+        .product__item {
+            margin-bottom: 40px;
+            .product__thumbnail {
+                height: 100%;
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .rooms-same-type {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .page__detail {
+        .detail__group {
+            .detail__content {
+                max-width: calc(100% - 270px);
+                padding-right: 30px;
+                .group__body {
+                    .group__body--item {
+                        column-gap: 30px;
+                    }
+                }
+            }
+            .detail__total {
+                max-width: 270px;
+            }
+        }
+    }
+    .page__card {
+        .card__product {
+            max-width: 50%;
+            .card__box {
+                .card__box--img {
+                    height: 220px;
+                }
+                .card__box--content {
+                    .card__box-header {
+                        h3 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .card__info {
+            max-width: 50%;
+            padding-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .category__product {
+        .product__portfolio {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+    }
+    .sofa-import {
+        .product__item {
+            .product__thumbnail {
+                height: 230px;
+            }
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+    .slide__album {
+        .album {
+            .slick-arrow {
+                &.slick-prev {
+                    left: -120%;
+                }
+                &.slick-next {
+                    left: -100%;
+                }
+            }
+            .album__item {
+                .album__box {
+                    .album__image {
+                        height: 300px;
+                    }
+                    .album__footer {
+                        h3 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .album__container {
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .page__rooms {
+        margin-bottom: 30px;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .rooms-same-type {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        h2 {
+            font-size: 30px;
+        }
+        .same-type {
+            margin-top: 30px;
+        }
+    }
+    .check__group {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner__home {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    .category__product {
+        .product__portfolio {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    .sofa-import .product__item {
+        background-color: rgba(204, 204, 204, 0.188);
+    }
+    .sofa__chapeau {
+        .sofa-import {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            .product__item {
+                background-color: rgba(204, 204, 204, 0.188);
+            }
+        }
+    }
+    .section__carpet {
+        .carpet {
+            .product__item {
+                background-color: rgba(204, 204, 204, 0.188);
+            }
+        }
+    }
+    .album__container {
+        display: block;
+        > div {
+            max-width: 100%;
+            text-align: center;
+            a {
+                margin: 20px auto;
+            }
+        }
+        .slide__album {
+            max-width: 100%;
+            padding-left: 0;
+        }
+    }
+    .page__card {
+        align-items: flex-start;
+        justify-content: flex-start;
+        .card__product {
+            .card__box {
+                .card__box--img {
+                    height: 160px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 726.98px) {
+    .page__product {
+        .page__product--sidebar {
+            max-width: 100%;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        .page__product--content {
+            padding-left: 0;
+            max-width: 100%;
+            .page__product--group {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                .product__item {
+                    .thumbnail {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .check__group {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: 10px;
+        .option__check {
+            padding: 5px;
+            grid-column: 2/4;
+        }
+    }
+    .page__detail {
+        .detail__group {
+            padding-top: 2rem;
+            .detail__content {
+                order: 2;
+                padding-right: 0;
+                max-width: 100%;
+            }
+            .detail__total {
+                margin-bottom: 30px;
+                position: unset;
+                max-width: 100%;
+            }
+        }
+    }
+    .similar__products {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    .same-slide .slick-arrow,
+    .slide__product .slick-arrow,
+    .slide__similar .slick-arrow {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (max-width: 668.98px) {
+    .page__product {
+        .page__product--content {
+            .page__product--group {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                .product__item {
+                    .thumbnail {
+                        height: 230px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576.98px) {
+    .banner__home {
+        .banner__content {
+            padding: 15px;
+            text-align: center;
+        }
+    }
+    .product__portfolio {
+        .product__portfolio--item {
+            div {
+                padding-top: 75.38%;
+            }
+        }
+    }
+    .section__carpet {
+        .carpet {
+            .product__item {
+                .product__thumbnail {
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .sofa-import {
+        .product__item {
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    .page__product {
+        .page__product--sidebar {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .page__product--content {
+            .page__product--group {
+                .product__item {
+                    .thumbnail {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 479.98px) {
+    .sofa-import {
+        .product__item {
+            margin-bottom: 0;
+        }
+    }
+    .sofa__chapeau {
+        margin-top: 30px;
+
+        .sofa-import {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+    .section__carpet {
+        .carpet {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            .product__item {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .album__container {
+        margin-top: 30px;
+    }
+    .section__carpet {
+        margin-top: 30px;
+    }
+    .module__header {
+        text-align: center;
+        display: block;
+        h2 {
+            font-size: 18px;
+        }
+        a {
+            margin-left: 0;
+        }
+    }
+    .category__product {
+        .product__portfolio {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    .sofa__product {
+        .sofa-import {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            .product__item {
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .banner__home {
+        > div {
+            padding-top: 66%;
+        }
+        h1 {
+            font-size: 27px;
+        }
+    }
+    .page__product {
+        .page__product--sidebar {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .page__product--content {
+            .page__product--group {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+                .product__item {
+                    .thumbnail {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .page__rooms {
+        h1 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+    .carpet {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        .product__item {
+            margin-bottom: 0;
+            background-color: rgba(204, 204, 204, 0.14);
+        }
+    }
+    .check__group {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .detail__group {
+        .detail__content {
+            h1 {
+                font-size: 25px;
+            }
+            > div {
+                gap: 20px;
+                .group {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+    .page__detail {
+        .detail__group {
+            .detail__content {
+                .group__body {
+                    .group__body--item {
+                        column-gap: 15px;
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+                }
+            }
+            .group__body {
+                > div {
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+                }
+            }
+        }
+    }
+    .bs-modal {
+        .content-modal {
+            .module__option {
+                .module__option--body {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .option__box {
+                        > div {
+                            grid-template-columns: repeat(3, minmax(0, 1fr));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page__card {
+        flex-direction: column;
+        .card__product {
+            max-width: 100%;
+        }
+        .card__info {
+            padding-top: 30px;
+            padding-left: 0px;
+            max-width: 100%;
+        }
+    }
+    .page__login {
+        .save__password {
+            span {
+                &:before {
+                    left: 15%;
+                }
+            }
+        }
     }
 }

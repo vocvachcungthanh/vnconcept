@@ -25,9 +25,9 @@
 
 <body class="overflow-hidden">
     <div class="wrapper">
-        <div class="container">
+        <div class="container__wrapper">
             <div class="flex justify-center items-center h-screen">
-                <div class="page__login max-w-[479px] w-full mx-auto grid overflow-auto h-full py-6">
+                <div class="page__login sm:max-w-[479px] w-full mx-auto grid overflow-auto h-full py-6">
                     <a href="index.html" class="flex justify-center items-center max-w-[241px] w-full m-auto">
                         <img src="images/icons/icon__logo-login.svg" alt="logo" class="w-full max-w-full object-contain flex">
                     </a>
@@ -55,7 +55,7 @@
                             </label>
                             <div class="w-full flex h-10 px-3 rounded border border-[#AFB0B2] hover:border-[#629CFC]">
                                 <input type="password" placeholder="Nhập tài khoản của bạn" class="input__password w-full rounded placeholder:text-[#AFB0B2] outline-none text-sm" />
-                                <span class="w-6 h-10 flex items-center view__password justify-end cursor-pointer">
+                                <span class="flex-shrink-0 w-6 h-10 flex items-center view__password justify-end cursor-pointer">
                                     <svg width="16" height="12" viewbox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.3291 11.0259C12.5063 11.2031 12.791 11.2085 12.9683 11.0259C13.1509 10.8379 13.1455 10.564 12.9683 10.3867L3.66553 1.09473C3.49365 0.91748 3.19824 0.91748 3.021 1.09473C2.84912 1.2666 2.84912 1.56201 3.021 1.73389L12.3291 11.0259ZM8 1.40625C7.06006 1.40625 6.20605 1.56201 5.4165 1.81982L6.54443 2.94775C7.00635 2.82959 7.48438 2.75977 8 2.75977C11.2495 2.75977 13.7417 5.52588 13.7417 6.13281C13.7417 6.5249 13.0005 7.4917 11.7974 8.28125L12.8394 9.32861C14.499 8.20068 15.4497 6.75586 15.4497 6.13281C15.4497 5.02637 12.5171 1.40625 8 1.40625ZM8 10.8594C8.97754 10.8594 9.87451 10.6982 10.6855 10.4243L9.56299 9.29639C9.06885 9.42529 8.55322 9.50586 8 9.50586C4.75049 9.50586 2.2583 6.86328 2.2583 6.13281C2.2583 5.79443 3.03711 4.7793 4.30469 3.96289L3.24658 2.90479C1.54395 4.03271 0.550293 5.49902 0.550293 6.13281C0.550293 7.23389 3.55273 10.8594 8 10.8594ZM10.5459 6.92236C10.6479 6.67529 10.6963 6.40674 10.6963 6.12744C10.6963 4.63428 9.49854 3.44189 8.00537 3.44189C7.7207 3.44189 7.45752 3.49023 7.21045 3.58154L10.5459 6.92236ZM8 8.82373C8.31689 8.82373 8.6123 8.75928 8.88623 8.64111L5.48096 5.24121C5.36816 5.50977 5.30371 5.81055 5.30371 6.13281C5.30371 7.59912 6.50146 8.82373 8 8.82373Z" fill="#AFB0B2" />
                                     </svg>
@@ -82,7 +82,7 @@
                     </form>
 
                     <div class="capcha flex justify-center items-center mt-[26px]">
-                        <svg width="312" height="86" viewbox="0 0 312 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sm:max-w-[312px] w-full" height="86" viewbox="0 0 312 86" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_989_8458)">
                                 <rect x="5" y="5" width="302" height="76" rx="3" fill="white" />
                                 <rect x="5.5" y="5.5" width="301" height="75" rx="2.5" stroke="#E1E1E1" />
@@ -187,7 +187,7 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0014 7.95443C22.9377 7.95443 25.574 8.96351 27.6467 10.9453L33.383 5.20902C29.9194 1.98179 25.3922 0 20.0014 0C12.1833 0 5.41977 4.48176 2.12891 11.018L8.81063 16.1998C10.3833 11.4726 14.7924 7.95443 20.0014 7.95443Z" fill="#EA4335" />
                                 </svg>
                             </span>
-                            <span class="text-black text-2xl font-semibold">
+                            <span class="text-black sm:text-lg md:text-2xl font-semibold">
                                 Sign in with Google
                             </span>
                         </a>
@@ -200,7 +200,7 @@
                                 </svg>
 
                             </span>
-                            <span class="text-black text-2xl font-semibold">
+                            <span class="text-black sm:text-lg md:text-2xl font-semibold">
                                 Sign in with Facebook
                             </span>
                         </a>

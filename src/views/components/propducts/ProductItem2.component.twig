@@ -13,11 +13,11 @@
 		</svg>
 	</span>
 	{% if height %}
-		<a href="{{link}}" class="flex items-center justify-center h-[720px]" title="{{title}}">
+		<a href="{{link}}" class="flex items-center justify-center h-[720px] thumbnail" title="{{title}}">
 			<img src="images/{{thumbnail}}" alt="{{thumbnail}}" class="w-full h-full object-contain"/>
 		</a>
 	{% else %}
-		<a href="{{link}}" class="flex items-center justify-center h-[280px]" title="{{title}}">
+		<a href="{{link}}" class="flex items-center justify-center h-[280px] thumbnail" title="{{title}}">
 			<img src="images/{{thumbnail}}" alt="{{thumbnail}}" class="w-full h-full object-contain"/>
 		</a>
 	{% endif %}

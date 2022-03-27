@@ -1,4 +1,44 @@
 $(document).ready(function () {
+    function menus() {
+        $(".toggle__menu").on("click", function () {
+            $(".menu__container").toggleClass("active");
+            $("body").toggleClass("active-modal");
+            let menusClass = $(".menu__addon");
+            $(".menu__container").on("click", function (e) {
+                if (
+                    !menusClass.is(e.target) &&
+                    menusClass.has(e.target).length === 0
+                ) {
+                    $(".menu__container").removeClass("active");
+                    $("body").removeClass("active-modal");
+                }
+            });
+        });
+        appButton = () => {
+            let has = $('.menu__addon li:has("ul")');
+            return has
+                ? has.append(
+                      '<button class="btn btn__toggle w-6 h-6 z-10 text-white rounded bg-black absolute right-3 top-[10px] hidden"><span>+</span></button>'
+                  )
+                : "";
+        };
+        appButton();
+        onMenu = () => {
+            let button = $(".btn__toggle");
+            let hasMenu = $(".menu__addon li ul");
+            button.on("click", function () {
+                let __ = $(this).parent("li").children("ul");
+
+                // hasMenu.not(__).slideUp();
+                // button.not($(this)).removeClass("active");
+                __.slideToggle();
+
+                $(this).toggleClass("active");
+            });
+        };
+        onMenu();
+    }
+    menus();
     function like() {
         $(".like").on("click", function () {
             $(this).toggleClass("active");

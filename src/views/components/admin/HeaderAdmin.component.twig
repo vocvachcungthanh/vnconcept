@@ -1,6 +1,6 @@
 <header class="px-5 pt-5 pb-3 flex items-center border-b border-[#D2D2D2]">
 	<div class="relative">
-		<div class="flex items-center border border-[#D2D2D2] rounded max-w-[392px] w-full">
+		<div class="search__header flex items-center border border-[#D2D2D2] rounded  sm:max-w-[250px] md:max-w-[300px] lg:max-w-[392px] w-full">
 			<button class="flex items-center w-6 h-6 flex-shrink-0">
 				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M3.89014 10.4463C3.89014 14.0986 6.86182 17.0703 10.5142 17.0703C11.9585 17.0703 13.2783 16.6055 14.3657 15.8252L18.4497 19.9175C18.6406 20.1084 18.8896 20.1997 19.1553 20.1997C19.7197 20.1997 20.1099 19.7764 20.1099 19.2202C20.1099 18.9546 20.0103 18.7139 19.8359 18.5396L15.7769 14.4556C16.6318 13.3433 17.1382 11.957 17.1382 10.4463C17.1382 6.79395 14.1665 3.82227 10.5142 3.82227C6.86182 3.82227 3.89014 6.79395 3.89014 10.4463ZM5.30957 10.4463C5.30957 7.57422 7.64209 5.2417 10.5142 5.2417C13.3862 5.2417 15.7188 7.57422 15.7188 10.4463C15.7188 13.3184 13.3862 15.6509 10.5142 15.6509C7.64209 15.6509 5.30957 13.3184 5.30957 10.4463Z" fill="#212529"/>
@@ -16,7 +16,7 @@
 			</button>
 		</div>
 		<div class="search__box hidden">
-			<div class=" absolute grid gap-y-6 left-0 top-full  p-4 w-[488px] bg-white border border-[#D2D2D2] rounded shadow-[0px_8px_15px_rgba(0,0,0,0.15)]">
+			<div class=" absolute z-[9999] grid gap-y-6 left-0 top-full  p-4 w-[488px] bg-white border border-[#D2D2D2] rounded shadow-[0px_8px_15px_rgba(0,0,0,0.15)]">
 				<div class="flex items-center">
 					<label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
 						Từ
@@ -29,7 +29,7 @@
 					</label>
 					<input type="text" class="w-full  text-sm border-b border-[ #D2D2D2] outline-none">
 				</div>
-				<div class="flex items-center">
+				<div class="amdin__ntk flex items-center">
 					<label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
 						Ngày trong khoảng
 					</label>
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex items-center gap-3 ml-auto">
+	<div class="header__admin-control flex items-center gap-3 ml-auto">
 		<p class="text=[#212529] text-sm font-semibold">
 			Doanh số đến thời điểm
 		</p>
@@ -69,5 +69,9 @@
 		<span class="flex px-3 py-[7px] font-semibold h-8 justify-center items-center text-[#2C6CD5] rounded border border-[#2C6CD5]">
 			2.000.0000
 		</span>
+		<button class="menuAdmin w-6 h-6 bg-white flex justify-center items-center rounded ml-4">
+			&equiv;
+		</button>
 	</div>
+
 </header>
