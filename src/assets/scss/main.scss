@@ -434,6 +434,27 @@ body {
     margin: auto;
     padding: 0px 15px;
 }
+.dropdownTree {
+    &:hover {
+        .dropdownTree__body {
+            transition: 0.2s all;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .dropdownTree__body {
+        transition: 0.2s all;
+        transform: translateY(10%);
+        visibility: hidden;
+        opacity: 0;
+        label {
+            &:nth-child(even) {
+                background-color: #f6f6f6;
+            }
+        }
+    }
+}
 @media (max-width: 1390.98px) {
     .same-slide {
         .slick-arrow {

@@ -29,6 +29,25 @@
 					</label>
 					<input type="text" class="w-full  text-sm border-b border-[ #D2D2D2] outline-none">
 				</div>
+				<div class="flex items-center">
+					<label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
+						Chọn đại lý
+					</label>
+					<div class="dropdownTree relative w-full">
+						<div class="dropdownTree__header min-h-[21px] w-full grid gap-2 grid-cols-2 text-sm border-b border-[ #D2D2D2]"></div>
+						<div class="dropdownTree__body max-w-[319px] rounded  w-full absolute z-20 bg-white shadow-[0px_8px_15px_rgba(0,0,0,0.15)]">
+							{% for item in 1..6 %}
+								<label class="dropdownTree__checkbox flex items-center px-3 py-[6px] cursor-pointer" for="dealer__{{item}}">
+									<input id="dealer__{{item}}" type="checkbox" class="dropdownTree__input border-2 border-[#8E8E93] rounded w-[14px] h-[14px] mr-[9px]">
+									<span class="dropdownTree__name text-sm">
+										Đại lý Hoàng Sơn
+									</span>
+								</label>
+							{% endfor %}
+						</div>
+					</div>
+
+				</div>
 				<div class="amdin__ntk flex items-center">
 					<label class="text-[#212529] text-sm flex-shrink-0 max-w-[128px] w-full">
 						Ngày trong khoảng
