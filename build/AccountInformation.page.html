@@ -366,12 +366,33 @@
     </div>
 
     <script type="text/javascript" src="js/plugins/jquery.js"></script>
-    <script type"text/javascript" src="js/plugins/slick.js"></script>
-    <script type"text/javascript" src="js/plugins/tab.js"></script>
+    <script type="text/javascript" src="js/plugins/slick.js"></script>
+    <script type="text/javascript" src="js/plugins/tab.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="./js/plugins/jquery-custome-select.js"></script>
     <script>
         $(document).ready(function() {
+            function menuAdmin() {
+                $(".control__show").on("click", function() {
+                    $(".control__children").not($(this).children(".control__children")).slideUp();
+                    $(".control__show").not($(this)).removeClass("active");
+                    $(this).parents(".control__list").children(".control__children").slideToggle();
+                    $(this).toggleClass("active");
+                });
+            }
+            menuAdmin();
+
+            function selectAdmin() {
+                $(".select-admin").customSelect();
+            }
+            selectAdmin();
+
+            function fillSearchAdmin() {
+                $(".option__search").on("click", function() {
+                    $(".search__box").slideToggle();
+                });
+            }
+            fillSearchAdmin();
             $('.menuAdmin').on("click", function() {
                 $('.page__admin').toggleClass('active');
             })

@@ -33,4 +33,17 @@
             }
         }
     }
+    .bs-tab {
+        .control-list {
+            .control-list__item {
+                &.active {
+                    background-color: transparent;
+                    border-bottom: 1px solid #232323;
+                }
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 }

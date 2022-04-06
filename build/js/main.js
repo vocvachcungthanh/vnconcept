@@ -25,12 +25,9 @@ $(document).ready(function () {
         appButton();
         onMenu = () => {
             let button = $(".btn__toggle");
-            let hasMenu = $(".menu__addon li ul");
+
             button.on("click", function () {
                 let __ = $(this).parent("li").children("ul");
-
-                // hasMenu.not(__).slideUp();
-                // button.not($(this)).removeClass("active");
                 __.slideToggle();
 
                 $(this).toggleClass("active");
@@ -141,31 +138,4 @@ $(document).ready(function () {
         }, 1000);
     }
     TimeOtp();
-
-    function menuAdmin() {
-        $(".control__show").on("click", function () {
-            $(".control__children")
-                .not($(this).children(".control__children"))
-                .slideUp();
-            $(".control__show").not($(this)).removeClass("active");
-            $(this)
-                .parents(".control__list")
-                .children(".control__children")
-                .slideToggle();
-            $(this).toggleClass("active");
-        });
-    }
-    menuAdmin();
-
-    function selectAdmin() {
-        $(".select-admin").customSelect();
-    }
-    selectAdmin();
-
-    function fillSearchAdmin() {
-        $(".option__search").on("click", function () {
-            $(".search__box").slideToggle();
-        });
-    }
-    fillSearchAdmin();
 });
