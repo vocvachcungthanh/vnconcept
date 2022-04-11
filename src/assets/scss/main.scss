@@ -455,6 +455,26 @@ body {
         }
     }
 }
+.page__product {
+    &--sidebar {
+        .sidebar__box {
+            .sidebar__body {
+                .sidebar__item {
+                    .sidebar__link {
+                        input {
+                            display: none;
+                            &:checked {
+                                & ~ span {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1390.98px) {
     .same-slide {
         .slick-arrow {
