@@ -3,7 +3,7 @@ function scrollTop() {
 }
 function line() {
     let offsetTop = $(".control-list__item.active")[0].offsetTop + "px";
-    let offsetHeight = $(".control-list__item.active")[0].offsetHeight +  "px";
+    let offsetHeight = $(".control-list__item.active")[0].offsetHeight + "px";
     $(".line").css({
         top: offsetTop,
         height: offsetHeight,
@@ -31,7 +31,7 @@ function addonTab() {
         // scrollTop();
     });
     tabLocalhost(tabsList);
-    $(".control-list__item").click(function () {
+    $(".control-list__item").hover(function () {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
         $($(this).attr("tab-show")).slideDown(300);
